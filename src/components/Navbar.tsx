@@ -80,7 +80,7 @@ const Navbar = () => {
 
       {/* Mobile Top Bar */}
       <div className="md:hidden cf text-white flex justify-between items-center px-4 py-4">
-        <div className="text-2xl font-bold">AT <span className="text-amber-100">Developments</span></div>
+        <div className="text-2xl font-bold">AT<span className="text-amber-100">Developments</span></div>
         <button onClick={toggleMenu}>
           {isOpen ? <FiX size={26} /> : <FiMenu size={26} />}
         </button>
