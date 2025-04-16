@@ -1,7 +1,7 @@
 
 const Contact = () => {
   return (
-    <div className="py-10">
+    <div className="py-10" id="contact">
         <div className="container">
             <div className="md:flex gap-8">
                 <div className="flex  flex-1/2">

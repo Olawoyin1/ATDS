@@ -1,7 +1,7 @@
 
 const About = () => {
   return (
-    <div className="py-10">
+    <div className="py-10" id="about">
         <div className="container">
             <div className="md:flex gap-8">
                 <div className="flex flex-col gap-4 flex-1/2">

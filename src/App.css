@@ -19,7 +19,9 @@ img{
     font-family: "Cinzel", serif;
 }
 
-
+html {
+    scroll-behavior: smooth;
+  }
 .main{
     background-color: #cccccc;
     background-blend-mode: multiply;

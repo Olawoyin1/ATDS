@@ -47,10 +47,10 @@ const MiniFooterAlt = () => {
 
         {/* Navigation Links */}
         <nav className="flex flex-wrap justify-center gap-6 text-sm mb-6">
-          <a href="#" className="hover:text-white transition">About</a>
-          <a href="#" className="hover:text-white transition">Services</a>
-          <a href="#" className="hover:text-white transition">Projects</a>
-          <a href="#" className="hover:text-white transition">Contact</a>
+          <a href="#about" className="hover:text-white transition">About</a>
+          <a href="#services" className="hover:text-white transition">Services</a>
+          <a href="#projects" className="hover:text-white transition">Projects</a>
+          <a href="#contact" className="hover:text-white transition">Contact</a>
         </nav>
 
         {/* Social Icons */}

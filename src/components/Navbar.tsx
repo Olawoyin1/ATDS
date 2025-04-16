@@ -70,11 +70,11 @@ const Navbar = () => {
       {/* Desktop Navbar */}
       <div className="container hidden md:block">
         <div className="flex cf h-18 text-white items-center justify-between">
-          <li><a href="">About</a></li>
-          <li><a href="">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
           <li className="text-3xl font-bold">AT<span className="text-amber-100">Developments</span></li>
-          <li><a href="">Project</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
         </div>
       </div>
 
@@ -101,10 +101,10 @@ const Navbar = () => {
 
         {/* Menu Items */}
         <div className="px-6 pt-8 space-y-6 cf text-lg font-medium">
-          <a href="#" onClick={toggleMenu} className="block">About</a>
-          <a href="#" onClick={toggleMenu} className="block">Services</a>
-          <a href="#" onClick={toggleMenu} className="block">Project</a>
-          <a href="#" onClick={toggleMenu} className="block">Contact</a>
+          <a href="#about" onClick={toggleMenu} className="block">About</a>
+          <a href="#services" onClick={toggleMenu} className="block">Services</a>
+          <a href="#project" onClick={toggleMenu} className="block">Project</a>
+          <a href="#contact" onClick={toggleMenu} className="block">Contact</a>
         </div>
       </div>
 
