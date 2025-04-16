@@ -72,7 +72,7 @@ const Navbar = () => {
         <div className="flex cf h-18 text-white items-center justify-between">
           <li><a href="">About</a></li>
           <li><a href="">Services</a></li>
-          <li className="text-3xl font-bold">ATDevelopments</li>
+          <li className="text-3xl font-bold">AT<span className="text-amber-100">Developments</span></li>
           <li><a href="">Project</a></li>
           <li><a href="">Contact</a></li>
         </div>
@@ -80,7 +80,7 @@ const Navbar = () => {
 
       {/* Mobile Top Bar */}
       <div className="md:hidden cf text-white flex justify-between items-center px-4 py-4">
-        <div className="text-2xl font-bold">ATDevelopments</div>
+        <div className="text-2xl font-bold">AT <span className="text-amber-100">Developments</span></div>
         <button onClick={toggleMenu}>
           {isOpen ? <FiX size={26} /> : <FiMenu size={26} />}
         </button>
