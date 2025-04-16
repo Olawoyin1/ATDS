@@ -4,27 +4,42 @@ import "slick-carousel/slick/slick-theme.css";
 
 const projects = [
   {
-    image: "https://img.freepik.com/free-photo/old-brick-house_1127-3395.jpg",
+    image: "../../Images/atds.jpg",
     location: "London",
     title: "Woodsom Road NW5",
   },
   {
-    image: "https://img.freepik.com/free-photo/modern-architecture-building-design_23-2150795320.jpg",
+    image: "../../Images/atds1.jpg",
     location: "London",
     title: "Highgate Residence",
   },
   {
-    image: "https://img.freepik.com/free-photo/residential-building-exterior_23-2150795325.jpg",
+    image: "../../Images/atds2.jpg",
     location: "London",
     title: "Private Residence, Primrose Hill",
   },
   {
-    image: "https://img.freepik.com/free-photo/modern-residential-building_23-2150795333.jpg",
+    image: "../../Images/atds3.jpg",
     location: "London",
     title: "The Kenwood House",
   },
   {
-    image: "https://img.freepik.com/free-photo/white-modern-apartment-building_23-2150795304.jpg",
+    image: "../../Images/atds4.jpg",
+    location: "London",
+    title: "Cityview Heights",
+  },
+  {
+    image: "../../Images/atds7.jpg",
+    location: "London",
+    title: "Cityview Heights",
+  },
+  {
+    image: "../../Images/atds8.jpg",
+    location: "London",
+    title: "Cityview Heights",
+  },
+  {
+    image: "../../Images/atds9.jpg",
     location: "London",
     title: "Cityview Heights",
   },
@@ -57,12 +72,12 @@ const settings = {
 
 const FeaturedProjects = () => {
   return (
-    <section className="text-[#2e2e2e] py-10">
-      <div className="container flex items-center justify-between mb-10">
-        <h2 className="text-3xl font-semibold headings">Featured Projects</h2>
-        <button className="border border-gray-400 text-sm px-4 py-2 hover:bg-gray-100 transition">
+    <section className="text-[#2e2e2e] py-10 overflow-x-hidden">
+      <div className="container  mb-10">
+        <h2 className="text-3xl text-center cf font-semibold">Featured Projects</h2>
+        {/* <button className="border border-gray-400 text-sm px-4 py-2 hover:bg-gray-100 transition">
           More Projects
-        </button>
+        </button> */}
       </div>
 
       <Slider {...settings}>
@@ -74,10 +89,10 @@ const FeaturedProjects = () => {
                 alt={project.title}
                 className="w-full shadow-sm border-1 h-60 object-cover "
               />
-              <div className="flex justify-between text-center">
+              {/* <div className="flex justify-between text-center">
                 <h3 className="text-lg font-medium">{project.title}</h3>
                 <p className="text-gray-500 text-sm">{project.location}</p>
-              </div>
+              </div> */}
             </div>
           </div>
         ))}

@@ -88,7 +88,7 @@ const Navbar = () => {
 
       {/* Slide-in Mobile Menu */}
       <div
-        className={`fixed top-0 right-0 h-full w-[260px] bg-white text-gray-900 transform transition-transform duration-300 ease-in-out z-40 md:hidden ${
+        className={`fixed cf top-0 right-0 h-full w-[260px] bg-white text-gray-900 transform transition-transform duration-300 ease-in-out z-40 md:hidden ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -100,7 +100,7 @@ const Navbar = () => {
         </div>
 
         {/* Menu Items */}
-        <div className="px-6 pt-8 space-y-6 text-lg font-medium">
+        <div className="px-6 pt-8 space-y-6 cf text-lg font-medium">
           <a href="#" onClick={toggleMenu} className="block">About</a>
           <a href="#" onClick={toggleMenu} className="block">Services</a>
           <a href="#" onClick={toggleMenu} className="block">Project</a>

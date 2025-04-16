@@ -47,7 +47,7 @@ const services = [
     return (
       <div className="py-12 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-semibold mb-8 text-center">Services</h2>
+          <h2 className="text-3xl font-semibold cf mb-8 text-center">Services</h2>
   
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {services.map((service, index) => (
