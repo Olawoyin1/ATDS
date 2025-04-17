@@ -72,7 +72,7 @@ const settings = {
 
 const FeaturedProjects = () => {
   return (
-    <section className="text-[#2e2e2e] py-10 overflow-x-hidden">
+    <section className="text-[#2e2e2e] py-10 overflow-x-hidden" id="projects">
       <div className="container  mb-10">
         <h2 className="text-3xl text-center cf font-semibold">Featured Projects</h2>
         {/* <button className="border border-gray-400 text-sm px-4 py-2 hover:bg-gray-100 transition">

@@ -73,7 +73,7 @@ const Navbar = () => {
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
           <li className="text-3xl font-bold">AT<span className="text-amber-100">Developments</span></li>
-          <li><a href="#project">Project</a></li>
+          <li><a href="#projects">Project</a></li>
           <li><a href="#contact">Contact</a></li>
         </div>
       </div>
@@ -103,7 +103,7 @@ const Navbar = () => {
         <div className="px-6 pt-8 space-y-6 cf text-lg font-medium">
           <a href="#about" onClick={toggleMenu} className="block">About</a>
           <a href="#services" onClick={toggleMenu} className="block">Services</a>
-          <a href="#project" onClick={toggleMenu} className="block">Project</a>
+          <a href="#projects" onClick={toggleMenu} className="block">Project</a>
           <a href="#contact" onClick={toggleMenu} className="block">Contact</a>
         </div>
       </div>
