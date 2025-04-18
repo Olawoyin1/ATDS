@@ -27,6 +27,21 @@ html {
     background-blend-mode: multiply;
 }
 
+.logo {
+    position: relative;
+}
+
+.logo::after{
+    content: "";
+    position: absolute;
+    width: 4rem;
+    height: 100%;
+    border: 3px solid #FEF3C6;
+    left: 0;
+    top: 0;
+    border-right: none;
+}
+
 
 p{
     font-size: 14px;
