@@ -137,8 +137,9 @@ const Navbar = () => {
     <div className="relative z-50">
       {/* Desktop Navbar */}
       <div className="hidden md:flex text-white cf justify-between items-center px-8 py-4">
-         <div className="text-2xl font-bold">
-           AT<span className="text-amber-100">Developments</span>
+         <div className="text-2xl flex items-center gap-3 font-bold">
+          <h2 className="border-0 border-r-2 pr-3">ATDS</h2>
+          <h2>AT<span className="text-amber-100"> Developments</span></h2>
          </div>
          <nav className="flex space-x-6 text-lg font-medium">
            <a href="#about">About</a>

@@ -52,11 +52,11 @@ const services = [
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <div key={index} className=" overflow-hidden  transition">
-                <img
+                {/* <img
                   src={service.image}
                   alt={service.title}
                   className="w-full h-48 object-cover"
-                />
+                /> */}
                 <div className=" py-2">
                   <h3 className="text-md cf font-bold mb-2">{service.title}</h3>
                   <p className="text-gray-700 text-sm">{service.description}</p>
