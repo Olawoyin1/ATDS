@@ -16,10 +16,10 @@ const About = () => {
 
 
             <div className="md:flex gap-8 mt-14">
-                <div className="flex mt-10 md:mt-0 flex-1/2">
+                <div className="flex flex-1/2">
                     <img src="../../Images/atds3.jpg" alt="" />
                 </div>
-                <div className="flex flex-col gap-4 flex-1/2">
+                <div className="flex mt-10 md:mt-0  flex-col gap-4 flex-1/2">
                     <h2 className="cf font-medium text-md">Founded by Ahmed & Ahmed, who bring over 30 years of combined experience in the construction industry, ATDS was established with a clear mission: to deliver high-quality, client-focused building solutions with integrity, efficiency, and craftsmanship at the core. </h2>
                     <p className="text-gray-700">Their hands-on leadership and deep industry knowledge ensure that every project is approached with care, precision, and a deep understanding of client needs.</p>
                     <p className="text-gray-700">From managing complex construction programmes to guiding homeowners through their first renovation, we are actively involved in overseeing operations, ensuring the company’s high standards are upheld at every level. ATDS places a strong emphasis on clear communication, budget transparency, and reliable project delivery. Values that have helped build long-standing relationships with both clients and subcontractors.</p>
