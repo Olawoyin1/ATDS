@@ -18,7 +18,7 @@ const MiniFooterAlt = () => {
 
         {/* Copyright */}
         <p className="text-xs text-gray-500">
-          &copy; {new Date().getFullYear()} ATDevelopments. Built with passion - All Rights Reserved. 
+          &copy; {new Date().getFullYear()} ATDevelopments - All Rights Reserved. 
         </p>
         <p className="text-xs text-gray-500">Registered in England and Wales, Company Number: 14733654</p>
       </div>

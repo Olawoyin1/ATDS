@@ -168,7 +168,7 @@ const Navbar = () => {
         {/* Top Row: Brand + Close Icon */}
         <div className="flex cf justify-between items-center px-4 py-4 border-b border-gray-200">
           <div className="text-2xl font-bold">
-            AT<span className="text-amber-500">Developments</span>
+            AT<span className="text-amber-300">Developments</span>
           </div>
           <button onClick={toggleMenu}>
             <FiX size={26} />

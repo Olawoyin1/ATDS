@@ -5,14 +5,24 @@ const About = () => {
         <div className="container">
             <div className="md:flex gap-8">
                 <div className="flex flex-col gap-4 flex-1/2">
-                    <h2 className="cf font-bold text-md">Whether you're looking to build a new home, expand your property with an extension, or refurbish your space to give it a fresh new look, At Developments has the expertise and know-how to bring your vision to life.</h2>
-                    <p className="text-gray-700">AT Developments has over 10 years of experience in the construction and building industry, specialising in fit-outs, refurbishments, and new builds. Our projects range from small home refurbishments to medium-sized private developments.</p>
-
-                    <p className="text-gray-700">Our team consists of experienced construction managers and a skilled design manager, all of whom have long-standing, trustworthy working relationships with our specialist sub-contractors.</p>
-                    <p className="text-gray-700">Based in West London, we are committed to delivering outstanding quality projects with exceptional attention to detail. We strive to exceed our clients’ expectations by always meeting their goals.</p>
+                    <h2 className="cf font-medium text-md">ATDS | At Developments is a professional construction company based in West London, specialising in residential projects and medium-sized private developments.</h2>
+                    <p className="text-gray-700"> We provide end-to-end expertise from technical design through to construction completion. We have delivered a wide range of projects whether you’re planning to build a new home, expand your space, or give your property a fresh look, ATDS has the experience and skill to bring your vision to life.</p>
+                    <p className="text-gray-700">Our team includes experienced construction managers and a dedicated team of in-house builders, who work closely with our trusted network of sub-contractors and supply chain partners. These long-standing relationships allow us to consistently deliver projects within budget and on programme. We pride ourselves on a collaborative, hands-on approach, offering clear communication and full transparency from start to finish.</p>
                 </div>
                 <div className="flex mt-10 md:mt-0 flex-1/2">
                     <img src="../../Images/atds1.jpg" alt="" />
+                </div>
+            </div>
+
+
+            <div className="md:flex gap-8 mt-14">
+                <div className="flex mt-10 md:mt-0 flex-1/2">
+                    <img src="../../Images/atds3.jpg" alt="" />
+                </div>
+                <div className="flex flex-col gap-4 flex-1/2">
+                    <h2 className="cf font-medium text-md">Founded by Ahmed & Ahmed, who bring over 30 years of combined experience in the construction industry, ATDS was established with a clear mission: to deliver high-quality, client-focused building solutions with integrity, efficiency, and craftsmanship at the core. </h2>
+                    <p className="text-gray-700">Their hands-on leadership and deep industry knowledge ensure that every project is approached with care, precision, and a deep understanding of client needs.</p>
+                    <p className="text-gray-700">From managing complex construction programmes to guiding homeowners through their first renovation, we are actively involved in overseeing operations, ensuring the company’s high standards are upheld at every level. ATDS places a strong emphasis on clear communication, budget transparency, and reliable project delivery. Values that have helped build long-standing relationships with both clients and subcontractors.</p>
                 </div>
             </div>
         </div>
