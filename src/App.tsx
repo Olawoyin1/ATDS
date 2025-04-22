@@ -11,17 +11,18 @@ import "slick-carousel/slick/slick-theme.css";
 import "./index.css";
 import ProjectGrid from "./components/ProjectGrid";
 // import ProjectGallery from "./components/Portfolio";
+// import ProjectGallery from "./components/Portfolio";
 
 function App() {
   return (
     <>
 
-    {/* <ProjectGallery /> */}
       <Hero />
       <About />
       <Services />
       <Featured />
       <ProjectGrid />
+    {/* <ProjectGallery /> */}
       <Testimonials />
       <Contact />
       <Footer />

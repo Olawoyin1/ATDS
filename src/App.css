@@ -10,9 +10,11 @@
 }
 
 .image-gallery-slide img {
-    height: 100% !important;
-    width: 100%;
+    /* height: 100% !important; */
+    /* width: 100%; */
+    border-radius: 1rem;
     object-fit: cover !important;
+    height: 440px;
     overflow: hidden;
   }
 
@@ -54,6 +56,10 @@ p{
 
 .headings, button{
     font-family: "Montserrat", sans-serif;
+}
+
+.cs{
+    height: 400px !important;
 }
 
 button{
