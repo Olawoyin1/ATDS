@@ -25,34 +25,27 @@ const ProjectGallery = () => {
     setCurrentIndex(index);
   };
 
-  const renderLeftNav = (onClick, disabled) => (
-    <button
-      className="text-white p-2 hidden rounded-full z-10"
-      disabled={disabled}
-      onClick={onClick}
-    >
-      <FaChevronLeft size={20} />
-    </button>
-  );
+  // const renderLeftNav = (onClick: () => void, disabled: boolean) => (
+  //   <button
+  //     className="text-white p-2 hidden rounded-full z-10"
+  //     disabled={disabled}
+  //     onClick={onClick}
+  //   >
+  //     <FaChevronLeft size={20} />
+  //   </button>
+  // );
 
-  const renderRightNav = (onClick, disabled) => (
-    <button
-      className="text-white bg-black/50 p-2 hidden rounded-full z-10"
-      disabled={disabled}
-      onClick={onClick}
-    >
-      <FaChevronRight size={20} />
-    </button>
-  );
+  // const renderRightNav = (onClick: () => void, disabled: boolean) => (
+  //   <button
+  //     className="text-white bg-black/50 p-2 hidden rounded-full z-10"
+  //     disabled={disabled}
+  //     onClick={onClick}
+  //   >
+  //     <FaChevronRight size={20} />
+  //   </button>
+  // );
 
-  const renderZoomIcon = (onClick, isFullscreen) => (
-    <button
-      className="absolute top-4 right-4 bg-black/50 text-white p-2 rounded-full z-20"
-      onClick={onClick}
-    >
-      {isFullscreen ? "Exit" : "Zoom"}
-    </button>
-  );
+  
 
   return (
     <div className="max-w-md  mx-auto my-10 relative">
@@ -95,7 +88,7 @@ const ProjectGallery = () => {
         {/* Arrows and Count */}
         <div className="flex items-center gap-2">
           <button
-            onClick={() => galleryRef.current.slideTo(currentIndex - 1)}
+            // onClick={() => galleryRef.current.slideTo(currentIndex - 1)}
             className="p-2"
           >
             <FaChevronLeft size={20} />
@@ -106,7 +99,7 @@ const ProjectGallery = () => {
           </span>
 
           <button
-            onClick={() => galleryRef.current.slideTo(currentIndex + 1)}
+            // onClick={() => galleryRef.current.slideTo(currentIndex + 1)}
             className="p-2"
           >
             <FaChevronRight size={20} />
