@@ -217,7 +217,7 @@ const Services = () => {
   ];
 
   return (
-    <section className="bg-gray-100 py-20 px-6 md:px-12" id="services">
+    <section className="py-20 px-6 md:px-12" id="services">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl cf font-extrabold text-gray-900 mb-10 text-center">
           Our Services

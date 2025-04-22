@@ -23,12 +23,12 @@ const testimonials = [
   
   const Testimonials = () => {
     return (
-      <section className="bg-gray-100 py-12 px-4">
+      <section className=" py-12 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold cf text-center mb-10">Client Feedback</h2>
           <div className="grid gap-8 md:grid-cols-2">
             {testimonials.map((t, i) => (
-              <div key={i} className="bg-white p-6 rounded-lg ">
+              <div key={i} className="bg-white border border-gray-200 p-6 rounded-lg ">
                 <p className="text-gray-700 mb-4 italic">"{t.quote}"</p>
                 <h4 className="font-semibold cf text-gray-900 text-right">- {t.name}</h4>
               </div>

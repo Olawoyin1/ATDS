@@ -9,14 +9,19 @@ import Testimonials from "./components/Testimonials";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./index.css";
+import ProjectGrid from "./components/ProjectGrid";
+// import ProjectGallery from "./components/Portfolio";
 
 function App() {
   return (
     <>
+
+    {/* <ProjectGallery /> */}
       <Hero />
       <About />
       <Services />
       <Featured />
+      <ProjectGrid />
       <Testimonials />
       <Contact />
       <Footer />
