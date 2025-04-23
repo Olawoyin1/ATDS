@@ -215,13 +215,26 @@ const Navbar = () => {
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
+  
+
   useEffect(() => {
     const handleScroll = () => {
-      setShowNavbar(window.scrollY > 140);
+      // Always show navbar when menu is open
+      if (isOpen) {
+        setShowNavbar(true);
+      } else {
+        setShowNavbar(window.scrollY > 140);
+      }
     };
+  
     window.addEventListener("scroll", handleScroll);
+  
+    // Call it once on mount
+    handleScroll();
+  
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [isOpen]);
+
 
   return (
     <>
@@ -246,8 +259,9 @@ const Navbar = () => {
 
             {/* Mobile Navbar */}
             <div className="md:hidden flex justify-between items-center px-4 py-4 text-black">
-              <div className="text-2xl font-bold">
-                AT<span className="text-[#F8B44F]">Developments</span>
+            <div className="flex flex-col nav-logo py-1 px-3">
+                <span className="p-0 m-0 font-extrabold">ATDS</span>
+                <span className="text-[11px] mb-1">AT Developments</span>
               </div>
               <button onClick={toggleMenu}>
                 {isOpen ? <FiX size={26} /> : <FiMenu size={26} />}
@@ -261,19 +275,24 @@ const Navbar = () => {
               isOpen ? "translate-x-0" : "translate-x-full"
             }`}
           >
-            <div className="flex justify-between items-center px-4 py-4 border-b border-gray-200">
-              <div className="text-2xl font-bold">
-                AT<span className="text-amber-500">Developments</span>
-              </div>
+            <div className="flex justify-end items-center px-4 py-4 ">
+              
               <button onClick={toggleMenu}>
                 <FiX size={26} />
               </button>
             </div>
-            <div className="px-6 pt-8 space-y-6 text-lg font-medium">
+            <div className="px-8 flex flex-col pt-8 space-y-6 text-lg font-bold uppercase">
+              <a href="#about" onClick={toggleMenu}>Home</a>
               <a href="#about" onClick={toggleMenu}>About</a>
               <a href="#services" onClick={toggleMenu}>Services</a>
               <a href="#projects" onClick={toggleMenu}>Projects</a>
               <a href="#contact" onClick={toggleMenu}>Contact</a>
+            </div>
+
+            <div className="absolute bottom-4 left-8">
+              <p className="text-xs text-gray-500">
+                &copy; {new Date().getFullYear()} ATDevelopments - All Rights Reserved. 
+              </p>
             </div>
           </div>
 
