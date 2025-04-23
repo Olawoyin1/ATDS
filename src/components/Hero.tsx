@@ -131,9 +131,9 @@ const Hero = () => {
           
       {/* Static Overlay */}
       <div className="absolute inset-0 flex items-center justify-center z-30">
-        <div className="text-white  logo py-4  px-7">
-          <h3 className="text-3xl sm:text-5xl cf font-bold">ATDS</h3>
-          <p className="text-white/80">Professional Construction Services </p>
+        <div className="text-white  logo py-5 pb-6  px-7">
+          <h3 className="text-3xl sm:text-7xl cf font-bold">ATDS</h3>
+          <span className="text-white/80 sm:text-[19px] pb-1">AT Developments </span>
         </div>
       </div>
           
