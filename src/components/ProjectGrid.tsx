@@ -69,10 +69,10 @@ const projectData = [
     title: "Uxbridge Project 2024 COMPLETION - NEW BUILD - 33 APARTMENTS & 3 RETAIL UNITS",
     category: "Residential",
     images: [
-      { original: "../../Images/atds.jpg" },
-      { original: "../../Images/atds2.jpg" },
-      { original: "../../Images/atds3.jpg" },
-      { original: "../../Images/atds4.jpg" },
+      { original: "../../Images/new.jpg" },
+      { original: "../../Images/new1.jpg" },
+      { original: "../../Images/new3.jpg" },
+      { original: "../../Images/new2.jpg" },
     ],
   },
   {
@@ -101,11 +101,12 @@ const projectData = [
     id: 4,
     title: "HACKNEY Project 2022 completion - NEW BUILD - 7 APARTMENTS",
     category: "Private Development",
+    
     images: [
-      { original: "../../Images/new4.jpg" },
-      { original: "../../Images/new7.jpg" },
-      { original: "../../Images/atds10.jpg" },
-      { original: "../../Images/atds11.jpg" },
+      { original: "../../Images/atds.jpg" },
+      { original: "../../Images/atds2.jpg" },
+      { original: "../../Images/atds3.jpg" },
+      { original: "../../Images/atds4.jpg" },
     ],
   },
 ];
@@ -142,7 +143,7 @@ const ProjectGrid = () => {
       </div>
 
       {/* Galleries */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         {filteredProjects.map((project) => (
           <ProjectGallery
             key={project.id}
