@@ -50,6 +50,7 @@ import Home from "./Pages/Home";
 import SharedLayout from "./components2/SharedLayout";
 import Contact from "./Pages/Contact";
 import Portfolio from "./Pages/Portfolio";
+import ProjectDetails from "./Pages/ProjectDetails";
 
 function App() {
   const main = createBrowserRouter(
@@ -60,6 +61,7 @@ function App() {
         <Route path="services" element={<Services />} />
         <Route path="contact" element={<Contact />} />
         <Route path="projects" element={<Portfolio />} />
+        <Route path="projects/:slug" element={<ProjectDetails />} />
         <Route path="*" element={<ErrorPage />} />
       </Route>
     )

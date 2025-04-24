@@ -5,9 +5,9 @@ interface ProjectCardProps {
     title: string;
     description: string;
     image: string;
-    link: string;
+    slug: string;
   }
-const ProjectCard = ({ title, description, image, link }: ProjectCardProps) => {
+const ProjectCard = ({ title, description, image, slug }: ProjectCardProps) => {
   return (
     <div className="">
       <div className="relative group overflow-hidden md:h-[340px]">
@@ -25,7 +25,7 @@ const ProjectCard = ({ title, description, image, link }: ProjectCardProps) => {
             <p className="text-sm text-gray-200 mb-4">{description}</p>
           </div>
           <Link
-            to={link}
+            to={`/projects/${slug}`}
             className="flex hover:text-[#F8B44F] items-center gap-3 text-white transition"
           >
             View Project <MdOutlineArrowRightAlt size={18} />
@@ -38,7 +38,7 @@ const ProjectCard = ({ title, description, image, link }: ProjectCardProps) => {
         <h3 className="text-lg font-bold uppercase text-gray-800">{title}</h3>
         <p className="text-sm text-gray-500">{description}</p>
         <Link
-          to={link}
+          to={`/projects/${slug}`}
           className="flex  items-center gap-3  text-sm transition"
         >
           View Project <MdOutlineArrowRightAlt />
