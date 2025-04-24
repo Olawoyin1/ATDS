@@ -58,7 +58,7 @@ const ProjectDetails = () => {
               <img
                 src={img}
                 alt={`${project.title} ${index + 1}`}
-                className="w-full h-[450px] object-cover "
+                className="w-full sm:h-[450px] object-cover "
               />
             </div>
           ))}
