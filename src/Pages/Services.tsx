@@ -48,7 +48,7 @@ const Services = () => {
   return (
     <section className="mt-10 py-16 bg-white">
       <div className="container mx-auto space-y-20">
-        <h2 className="text-3xl font-bold text-center mb-10">Our Services</h2>
+        <h2 className="text-3xl font-bold text-center uppercase mb-10">Our Services</h2>
         <p className="text-gray-400">
           ATDS offers a comprehensive range of construction services tailored to homeowners, developers, and commercial clients. Our expertise spans private residential developments, bespoke extensions, and basement conversions, all designed to enhance space and value. We deliver high-quality refurbishments that revitalise existing properties, as well as new builds. Our team also specialises in flat conversions, maximising the potential of properties through smart and compliant design.
           <br />
