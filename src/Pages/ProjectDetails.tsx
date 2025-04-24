@@ -27,10 +27,12 @@ import projects from '../Projects';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useRef } from "react";
 
 const ProjectDetails = () => {
   const { slug } = useParams();
   const project = projects.find((p) => p.slug === slug);
+  const sliderRef = useRef<Slider | null>(null);
 
   if (!project) return <div className="p-10 text-center">Project not found</div>;
 
@@ -47,12 +49,12 @@ const ProjectDetails = () => {
 
   return (
     <div className="py-16 mt-14">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto">
         <h1 className="text-3xl uppercase font-bold mb-6">{project.title}</h1>
         <p className="text-gray-600 mb-8">{project.description}</p>
 
       </div>
-        <Slider {...settings}>
+        <Slider ref={sliderRef} {...settings}>
           {project.images.map((img, index) => (
             <div key={index} className="px-2">
               <img
@@ -63,6 +65,22 @@ const ProjectDetails = () => {
             </div>
           ))}
         </Slider>
+
+         {/* Custom Arrows BELOW */}
+         <div className="flex justify-center gap-6 mt-6">
+          <button
+            onClick={() => sliderRef.current?.slickPrev()}
+            className="bg-gray-800 text-white px-5 py-3  hover:bg-gray-600 transition"
+          >
+            ← 
+          </button>
+          <button
+            onClick={() => sliderRef.current?.slickNext()}
+            className="bg-gray-800 text-white px-5 py-3  hover:bg-gray-600 transition"
+          >
+             →
+          </button>
+        </div>
     </div>
   );
 };
