@@ -1,14 +1,14 @@
 // import React from 'react'
 import { Outlet } from 'react-router'
 import Footer from './Footer'
-import MainNavbar from './MainNavbar'
+import MainNavbar from '../components/Navbar'
 
 // import ScrollToTop from '../ScrollToTop'
 
 const SharedLayout = () => {
   return (
     <div>
-      <MainNavbar/>
+        <MainNavbar />
         {/* <ScrollToTop /> */}
         <Outlet />
         <Footer />
