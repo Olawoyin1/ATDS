@@ -1,7 +1,10 @@
 
 const Portfolio = () => {
   return (
-    <div>Portfolio</div>
+    <div className="py-10 mt-14">
+      <h3>Project section here</h3>
+
+    </div>
   )
 }
 

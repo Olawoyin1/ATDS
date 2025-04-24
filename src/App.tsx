@@ -49,6 +49,7 @@ import ErrorPage from "./Pages/ErrorPage";
 import Home from "./Pages/Home";
 import SharedLayout from "./components2/SharedLayout";
 import Contact from "./Pages/Contact";
+import Portfolio from "./Pages/Portfolio";
 
 function App() {
   const main = createBrowserRouter(
@@ -58,6 +59,7 @@ function App() {
         <Route path="about" element={<About />} />
         <Route path="services" element={<Services />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="projects" element={<Portfolio />} />
         <Route path="*" element={<ErrorPage />} />
       </Route>
     )
