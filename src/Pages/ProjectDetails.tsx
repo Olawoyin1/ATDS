@@ -51,6 +51,7 @@ const ProjectDetails = () => {
         <h1 className="text-3xl uppercase font-bold mb-6">{project.title}</h1>
         <p className="text-gray-600 mb-8">{project.description}</p>
 
+      </div>
         <Slider {...settings}>
           {project.images.map((img, index) => (
             <div key={index} className="px-2">
@@ -62,7 +63,6 @@ const ProjectDetails = () => {
             </div>
           ))}
         </Slider>
-      </div>
     </div>
   );
 };
