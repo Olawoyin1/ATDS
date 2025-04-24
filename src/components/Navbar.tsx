@@ -351,10 +351,10 @@ const MainNavbar = () => {
           <div className="container mx-auto">
             {/* Desktop Navbar */}
             <div className="hidden md:flex justify-between items-center py-4">
-              <div className="flex flex-col nav-logo py-1 px-3">
+              <Link to='/' className="flex flex-col nav-logo py-1 px-3">
                 <span className="p-0 m-0 font-extrabold">ATDS</span>
                 <span className="text-[11px] mb-1">AT Developments</span>
-              </div>
+              </Link>
               <nav className="flex space-x-6 text-sm font-bold uppercase">
                 <Link to="/" className="hover:text-[#F8B44F] transition ease-in">Home</Link>
                 <Link to="/about" className="hover:text-[#F8B44F] transition ease-in">About</Link>
