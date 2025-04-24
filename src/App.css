@@ -14,6 +14,27 @@
 }
 
 
+.shead{
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translate(-50%, -50%);
+}
+
+
+.cborder{
+    position: relative;
+}
+
+.cborder::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 4rem;
+    height: 100%;
+    border: 2px solid red;
+}
+
 
 .image-gallery-slide img {
     height: 100% !important;
