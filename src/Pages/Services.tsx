@@ -75,14 +75,20 @@ const Services = () => {
                 />
               </div>
               <div
-                className={`md:w-3/6 w-full md:min-h-[400px] flex justify-center flex-col h-full space-y-4 md:px-7 ${borderSide} border-[#F8B44F]`}
+                className={`md:w-3/6 w-full md:min-h-[400px] flex justify-center flex-col h-full space-y-4 md:px-6 ${
+                  index % 2 === 0
+                    ? 'md:border-r-4 md:pr-8'
+                    : 'md:border-l-4 md:pl-8'
+                } border-[#F8B44F]`}
               >
-                <h4 className="text-3xl md:text-8xl font-bold text-gray-300">
-                  0{index + 1}
-                </h4>
-                <h3 className="text-2xl font-bold">
-                  {service.title}
-                </h3>
+                <div className="flex items-center md:items-start md:flex-col    gap-3">
+                  <h4 className="text-3xl md:text-7xl font-bold text-gray-300">
+                    0{index + 1}
+                  </h4>
+                  <h3 className="text-2xl font-bold">
+                    {service.title}
+                  </h3>
+                </div>
                 <p className="text-gray-400 leading-relaxed">
                   {service.description}
                 </p>
