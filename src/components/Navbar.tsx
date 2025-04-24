@@ -367,10 +367,10 @@ const MainNavbar = () => {
 
             {/* Mobile Navbar */}
             <div className="md:hidden flex justify-between items-center py-4 text-black">
-              <div className="flex flex-col nav-logo py-1 px-3">
+              <Link to='/' className="flex flex-col nav-logo py-1 px-3">
                 <span className="p-0 m-0 font-extrabold">ATDS</span>
                 <span className="text-[11px] mb-1">AT Developments</span>
-              </div>
+              </Link>
               <button onClick={toggleMenu}>
                 {isOpen ? <FiX size={26} /> : <HiOutlineMenuAlt4 size={26} />}
               </button>

@@ -58,7 +58,6 @@ const Services = () => {
 
         {services.map((service, index) => {
           const isReversed = index % 2 !== 0;
-          const borderSide = isReversed ? "border-l-4" : "border-r-4";
 
           return (
             <div
