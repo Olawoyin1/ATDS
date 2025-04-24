@@ -96,7 +96,7 @@ const Testimonials = () => {
         <Slider {...settings}>
           {testimonials.map((t, i) => (
             <div key={i} className="px-4 pb-7">
-              <div className="bg-white min-h-[190px] border-2 border-[#F8B44F] p-6 rounded h-full">
+              <div className="bg-white h-[220px] border-2 border-[#F8B44F] p-6 rounded ">
                 <p className="text-gray-700 mb-4 italic">"{t.quote}"</p>
                 <h4 className="font-bold text-[#F8B44F] text-right">- {t.name}</h4>
               </div>
