@@ -1,3 +1,4 @@
+import Loader from "../components2/Loader";
 
 const Services = () => {
   const services = [
@@ -47,6 +48,7 @@ const Services = () => {
 
   return (
     <section className="mt-10 py-16 bg-white">
+      {/* <Loader /> */}
       <div className="container mx-auto space-y-20">
         <h2 className="text-3xl font-bold text-center uppercase mb-10">Our Services</h2>
         <p className="text-gray-400">

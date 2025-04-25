@@ -55,7 +55,7 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div className="mt-4 sm:mt-0">
+          <div className="">
             <ul className="space-y-2 text-sm">
               <li>
                 <Link to="/" className="hover:text-[#F8B44F]">
