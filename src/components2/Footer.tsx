@@ -16,7 +16,7 @@ const Footer = () => {
         {/* Wrapping Remaining 4 Sections for Mobile */}
         <div className="grid grid-cols-2 sm:gap-10 md:contents sm:col-span-1 md:col-span-4">
           {/* atds */}
-          <div>
+          <div className="hidden md:block">
             <ul className="space-y-2 text-sm">
               <li>© ATDS. {new Date().getFullYear()}</li>
               <li>All Rights Reserved</li>
