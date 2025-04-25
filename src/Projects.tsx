@@ -41,6 +41,19 @@ const Projects = [
     ],
     category: "Residential",
   },
+  {
+    title: "BRISTOL Project 2024 completion - NEW BUILD - 10 APARTMENTS",
+    slug: "uxbridge-project-2020-completion",
+    description:
+      "Newly completed residential development featuring 10 contemporary apartments in the Hackney district.",
+    images: [
+      "https://images.unsplash.com/photo-1570129477492-45c003edd2be",
+      "https://images.unsplash.com/photo-1599423300746-b62533397364",
+      "https://images.unsplash.com/photo-1626171273633-bfbf098c0f78",
+      "https://images.unsplash.com/photo-1626171273507-4ebdc19c5b1d",
+    ],
+    category: "Private Development",
+  },
 ];
 
 export default Projects;

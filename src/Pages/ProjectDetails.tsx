@@ -50,7 +50,7 @@ const ProjectDetails = () => {
   return (
     <div className="py-16 mt-14">
       <div className="container mx-auto">
-        <h1 className="text-3xl uppercase font-bold mb-6">{project.title}</h1>
+        <h1 className="text-xl sm:text-3xl uppercase font-bold mb-6">{project.title}</h1>
         <p className="text-gray-600 mb-8">{project.description}</p>
 
       </div>
