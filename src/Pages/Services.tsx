@@ -1,4 +1,4 @@
-import Loader from "../components2/Loader";
+// import Loader from "../components2/Loader";
 
 const Services = () => {
   const services = [
