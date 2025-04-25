@@ -14,7 +14,7 @@ const Footer = () => {
         </div>
 
         {/* Wrapping Remaining 4 Sections for Mobile */}
-        <div className="sm:grid sm:grid-cols-2 sm:gap-10 md:contents sm:col-span-1 md:col-span-4">
+        <div className="grid grid-cols-2 sm:gap-10 md:contents sm:col-span-1 md:col-span-4">
           {/* atds */}
           <div>
             <ul className="space-y-2 text-sm">
@@ -55,7 +55,7 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div className="mt-4 sm:mt-0">
             <ul className="space-y-2 text-sm">
               <li>
                 <Link to="/" className="hover:text-[#F8B44F]">
@@ -86,12 +86,12 @@ const Footer = () => {
           </div>
 
           {/* socials */}
-          <div className="flex gap-6">
+          <div className="flex mt-4 sm:mt-0 gap-6">
             <a
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline hover:text-[#F8B44F]"
+              className="hover:text-[#F8B44F]"
             >
               <FaFacebookF />
             </a>
