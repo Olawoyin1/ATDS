@@ -10,7 +10,7 @@ interface ProjectCardProps {
 const ProjectCard = ({ title, description, image, slug }: ProjectCardProps) => {
   return (
     <div className="">
-      <div className="relative group overflow-hidden md:h-[340px]">
+      <div className="relative group overflow-hidden md:h-[400px]">
         {/* Image */}
         <img
           src={image}

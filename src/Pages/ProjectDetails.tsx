@@ -36,17 +36,45 @@ const ProjectDetails = () => {
 
   if (!project) return <div className="p-10 text-center">Project not found</div>;
 
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    centerMode: true,
-    centerPadding: "10%",
-  };
+  // const settings = {
+  //   dots: false,
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   arrows: true,
+  //   centerMode: true,
+  //   centerPadding: "10%",
+  // };
 
+  const settings = {
+    className: "center",
+    centerMode: true,
+    infinite: true,
+    centerPadding: "80px",
+    slidesToShow: 2,
+    speed: 500,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          centerPadding: "40px",
+        },
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+          centerPadding: "40px",
+        },
+      },
+    ],
+  }
+
+
+  
   return (
     <div className="py-16 mt-14">
       <div className="container mx-auto">
@@ -60,7 +88,7 @@ const ProjectDetails = () => {
               <img
                 src={img}
                 alt={`${project.title} ${index + 1}`}
-                className="w-full sm:h-[450px] object-cover "
+                className="w-full  sm:h-[450px] object-cover "
               />
             </div>
           ))}
