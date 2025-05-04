@@ -11,6 +11,7 @@ const ProjectCard = ({ title, description, image, slug }: ProjectCardProps) => {
   return (
     <div className="">
       <div className="relative group overflow-hidden md:h-[400px]">
+      <div className="absolute inset-0 bg-gray-100/190 z-10" />
         {/* Image */}
         <img
           src={image}
@@ -22,7 +23,7 @@ const ProjectCard = ({ title, description, image, slug }: ProjectCardProps) => {
         <div className="hidden md:flex absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex-col justify-between p-10 text-white">
           <div>
             <h3 className="text-xl uppercase font-bold mb-2">{title}</h3>
-            <p className="text-sm text-gray-200 mb-4">{description}</p>
+            <p className="text-sm hidden text-gray-200 mb-4">{description}</p>
           </div>
           <Link
             to={`/projects/${slug}`}

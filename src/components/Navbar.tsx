@@ -360,6 +360,7 @@ const MainNavbar = () => {
                 <Link to="/about" className="hover:text-[#F8B44F] transition ease-in">About</Link>
                 <Link to="/services" className="hover:text-[#F8B44F] transition ease-in">Services</Link>
                 <Link to="/projects" className="hover:text-[#F8B44F] transition ease-in">Projects</Link>
+                <Link to="/testimonials" className="hover:text-[#F8B44F] transition ease-in">Testimonials</Link>
                 
                 <Link to="/contact" className="hover:text-[#F8B44F] transition ease-in">Contact</Link>
               </nav>
@@ -393,6 +394,7 @@ const MainNavbar = () => {
               <Link to="/about" onClick={toggleMenu}>About</Link>
               <Link to="/services" onClick={toggleMenu}>Services</Link>
               <Link to="/projects" onClick={toggleMenu}>Projects</Link>
+              <Link to="/testimonials" onClick={toggleMenu}>Testimonials</Link>
               <Link to="/contact" onClick={toggleMenu}>Contact</Link>
             </div>
             <div className="absolute bottom-4 left-8">

@@ -11,7 +11,7 @@ const About = () => {
                     <p className="text-gray-700">Our team includes experienced construction managers and a dedicated team of in-house builders, who work closely with our trusted network of sub-contractors and supply chain partners. These long-standing relationships allow us to consistently deliver projects within budget and on programme. We pride ourselves on a collaborative, hands-on approach, offering clear communication and full transparency from start to finish.</p>
                 </div>
                 <div className="flex mt-10 md:mt-0 flex-1/2">
-                    <img src="../../public/Images/abt.JPG" alt="" />
+                    <img src="../../Images/abt.JPG" alt="" />
                 </div>
             </div>
 
