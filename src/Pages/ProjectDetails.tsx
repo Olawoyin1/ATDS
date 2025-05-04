@@ -28,6 +28,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useRef } from "react";
+import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 
 const ProjectDetails = () => {
   const { slug } = useParams();
@@ -125,13 +126,14 @@ const ProjectDetails = () => {
               onClick={() => sliderRef.current?.slickPrev()}
               className="font-bold text-white p-2 "
             >
-              ←
+              <MdArrowBackIos size={24}/>
             </button>
             <button
               onClick={() => sliderRef.current?.slickNext()}
               className="text-white p-2 "
             >
-              →
+              <MdArrowForwardIos size={24}/>
+              
             </button>
           </div>
         </div>
