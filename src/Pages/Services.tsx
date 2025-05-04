@@ -50,7 +50,7 @@ const Services = () => {
     <section className="mt-10 py-16 bg-white">
       {/* <Loader /> */}
       <div className="container mx-auto space-y-20">
-        <h2 className="text-3xl font-bold text-center uppercase mb-10">Our Services</h2>
+        <h2 className="text-3xl cf font-bold text-center uppercase mb-10">Our Services</h2>
         <p className="text-gray-400">
           ATDS offers a comprehensive range of construction services tailored to homeowners, developers, and commercial clients. Our expertise spans private residential developments, bespoke extensions, and basement conversions, all designed to enhance space and value. We deliver high-quality refurbishments that revitalise existing properties, as well as new builds. Our team also specialises in flat conversions, maximising the potential of properties through smart and compliant design.
           <br />
@@ -83,10 +83,10 @@ const Services = () => {
                 } border-[#F8B44F]`}
               >
                 <div className="flex items-center md:items-start md:flex-col    gap-3">
-                  <h4 className="text-3xl md:text-7xl font-bold text-gray-300">
+                  <h4 className="text-3xl cf md:text-7xl font-bold text-gray-300">
                     0{index + 1}
                   </h4>
-                  <h3 className="text-2xl font-bold">
+                  <h3 className="text-2xl cf font-bold">
                     {service.title}
                   </h3>
                 </div>

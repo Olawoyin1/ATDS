@@ -161,7 +161,7 @@ const Projects = () => {
   return (
     <section className="py-16 mt-14 bg-white">
       <div className="container mx-auto">
-        <h2 className="text-3xl font-bold uppercase text-center mb-12">Projects</h2>
+        <h2 className="text-3xl font-bold cf uppercase text-center mb-12">Projects</h2>
 
         <div className="flex flex-wrap  justify-center gap-4 mb-10">
           {['All', 'Private Development', 'Residential'].map((cat) => (

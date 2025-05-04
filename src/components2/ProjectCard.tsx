@@ -11,7 +11,10 @@ const ProjectCard = ({ title, description, image, slug }: ProjectCardProps) => {
   return (
     <div className="">
       <div className="relative group overflow-hidden md:h-[400px]">
-      <div className="absolute inset-0 bg-gray-100/190 z-10" />
+      <Link to={`/projects/${slug}`}
+            className="flex hover:text-[#F8B44F] items-center gap-3 text-white transition"
+          >
+      <div className="absolute inset-0 bg-gray-100/190 " />
         {/* Image */}
         <img
           src={image}
@@ -20,18 +23,14 @@ const ProjectCard = ({ title, description, image, slug }: ProjectCardProps) => {
         />
 
         {/* Overlay on large screens only */}
-        <div className="hidden md:flex absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex-col justify-between p-10 text-white">
+        <div className="hidden md:flex absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex-col justify-between p-10 z-70 text-white">
           <div>
             <h3 className="text-xl uppercase font-bold mb-2">{title}</h3>
             <p className="text-sm hidden text-gray-200 mb-4">{description}</p>
           </div>
-          <Link
-            to={`/projects/${slug}`}
-            className="flex hover:text-[#F8B44F] items-center gap-3 text-white transition"
-          >
-            View Project <MdOutlineArrowRightAlt size={18} />
-          </Link>
+          
         </div>
+          </Link>
       </div>
 
       {/* Text below image only for small screens */}

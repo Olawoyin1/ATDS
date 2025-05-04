@@ -2,13 +2,57 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@font-face {
+  font-family: 'helvetica';
+  src: url('../public/Images/Helvetica/HelveticaNeueLTStd-400.otf') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'helvetica-bold';
+  src: url('../public/Images/Helvetica/HelveticaNeueLTStd-bold.otf') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
 *{
     /* border: 1px solid red; */
     box-sizing: border-box !important;
     list-style-type: none;
     text-decoration: none;
-    font-family: "Poppins", sans-serif;
+    font-family: "helvetica", sans-serif;
+  }   
+  
+.cf{
+  font-family: "helvetica-bold", sans-serif;
+
 }
+
+p{
+  font-size: 14px;
+}  
+
+
+.cs{
+  height: 400px !important;
+}  
+
+button{
+  cursor: pointer;
+}  
+
+body{
+  overflow-x: hidden;
+  color: black;
+}  
+
+.container{
+  max-width: 80%;
+  margin: 0 auto;
+}  
+
+
 
 
 /* Works on Chrome, Edge, and Safari */
@@ -165,28 +209,7 @@ html {
     width: 30%;
   }
 
-p{
-    font-size: 14px;
-}
 
-
-.cs{
-    height: 400px !important;
-}
-
-button{
-    cursor: pointer;
-}
-
-body{
-    overflow-x: hidden;
-    color: black;
-}
-
-.container{
-    max-width: 80%;
-    margin: 0 auto;
-}
 
 
 @media (max-width:540px){

@@ -1,9 +1,9 @@
-import { FaFacebookF, FaTwitter, FaYoutube, FaInstagram } from "react-icons/fa";
+// import { FaFacebookF, FaTwitter, FaYoutube, FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="py-12">
-      <div className="container mx-auto grid gap-10 sm:grid-cols-1 md:grid-cols-5">
+      <div className="container mx-auto grid gap-10 sm:grid-cols-1 md:grid-cols-4">
         {/* ATDevelopments Section - Full Width on Small */}
         <div className="sm:col-span-1 md:col-span-1">
           <h3 className="text-xl font-semibold">ATDS</h3>
@@ -86,7 +86,7 @@ const Footer = () => {
           </div>
 
           {/* socials */}
-          <div className="flex mt-4 sm:mt-0 gap-6">
+          {/* <div className="flex mt-4 sm:mt-0 gap-6">
             <a
               href="https://facebook.com"
               target="_blank"
@@ -119,7 +119,7 @@ const Footer = () => {
             >
               <FaInstagram />
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
