@@ -68,24 +68,26 @@ const Services = () => {
                 isReversed ? "md:flex-row-reverse" : ""
               } items-center gap-10`}
             >
-              <div className="relative md:w-2/3 w-full">
-                <img
+              <div className="relative flex items-center justify-center md:w-3/6 w-full">
+                {/* <img
                   src={service.image}
                   alt={service.title}
                   className="w-full sm:min-h-[400px] object-cover"
-                />
+                /> */}
+
+                  <h4 className="text-4xl cf md:text-9xl font-bold text-gray-300">
+                    0{index + 1}
+                  </h4>
               </div>
               <div
-                className={`md:w-3/6 w-full md:min-h-[400px] flex justify-center flex-col h-full space-y-4 md:px-6 ${
+                className={`md:w-2/3 w-full md:min-h-[400px] flex justify-center items-center md:items-start text-center md:text-start flex-col h-full space-y-4 md:px-6 ${
                   index % 2 === 0
                     ? 'md:border-r-4 md:pr-8'
                     : 'md:border-l-4 md:pl-8'
                 } border-[#F8B44F]`}
               >
                 <div className="flex items-center md:items-start md:flex-col    gap-3">
-                  <h4 className="text-3xl cf md:text-7xl font-bold text-gray-300">
-                    0{index + 1}
-                  </h4>
+                  
                   <h3 className="text-2xl cf font-bold">
                     {service.title}
                   </h3>
