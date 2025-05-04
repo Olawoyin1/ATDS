@@ -10,9 +10,9 @@ interface ProjectCardProps {
 const ProjectCard = ({ title, description, image, slug }: ProjectCardProps) => {
   return (
     <div className="">
-      <div className="relative group overflow-hidden md:h-[400px]">
+      <div className="relative group overflow-hidden">
       <Link to={`/projects/${slug}`}
-            className="flex hover:text-[#F8B44F] items-center gap-3 text-white transition"
+            className="flex hover:text-[#F8B44F] h-[300px]  lg:h-[400px] items-center gap-3 text-white transition"
           >
       <div className="absolute inset-0 bg-gray-100/190 " />
         {/* Image */}
