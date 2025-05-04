@@ -67,7 +67,7 @@ const ProjectDetails = () => {
         breakpoint: 640,
         settings: {
           slidesToShow: 1,
-          centerPadding: "40px",
+          centerPadding: "0px",
         },
       },
     ],
@@ -93,20 +93,52 @@ const ProjectDetails = () => {
         <p className="text-gray-600 mb-8">{project.description}</p>
 
       </div>
-        <Slider ref={sliderRef} {...settings}>
+        {/* <Slider ref={sliderRef} {...settings}>
           {project.images.map((img, index) => (
-            <div key={index} className="px-2">
+            <div key={index} className="px-2 h-[300px] sm:h-[450px] ">
               <img
                 src={img}
                 alt={`${project.title} ${index + 1}`}
-                className="w-full  sm:h-[450px] object-cover "
+                className="w-full h-full object-cover "
               />
             </div>
           ))}
-        </Slider>
+        </Slider> */}
+
+        <div className="relative">
+          {/* Slider */}
+          <Slider ref={sliderRef} {...settings}>
+            {project.images.map((img, index) => (
+              <div key={index} className="px-2 h-[300px] sm:h-[450px]">
+                <img
+                  src={img}
+                  alt={`${project.title} ${index + 1}`}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            ))}
+          </Slider>
+
+          {/* Custom Arrows - Only on small devices */}
+          <div className="sm:hidden absolute inset-0 flex items-center justify-between px-2 z-10">
+            <button
+              onClick={() => sliderRef.current?.slickPrev()}
+              className="font-bold text-white p-2 "
+            >
+              ←
+            </button>
+            <button
+              onClick={() => sliderRef.current?.slickNext()}
+              className="text-white p-2 "
+            >
+              →
+            </button>
+          </div>
+        </div>
+
 
          {/* Custom Arrows BELOW */}
-         <div className="flex justify-center gap-6 mt-6">
+         <div className="hidden sm:flex justify-center gap-6 mt-6">
           <button
             onClick={() => sliderRef.current?.slickPrev()}
             className="bg-gray-800 text-white px-5 py-3  hover:bg-gray-600 transition"
