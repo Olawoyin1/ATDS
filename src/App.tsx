@@ -90,6 +90,8 @@ import "./index.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Loader from "./components2/Loader";
+import Feedback from "./Pages/Feedback";
+// import Testimonials from "./component/TestimonialsPage";
 
 // Lazy imports
 const Home = lazy(() => import("./Pages/Home"));
@@ -148,6 +150,15 @@ const main = createBrowserRouter(
         element={
           <Suspense fallback={<Loader />}>
             <Portfolio />
+          </Suspense>
+        }
+      />
+      
+      <Route
+        path="testimonials"
+        element={
+          <Suspense fallback={<Loader />}>
+            <Feedback />
           </Suspense>
         }
       />

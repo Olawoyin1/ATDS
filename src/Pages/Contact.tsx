@@ -18,6 +18,7 @@ const Contact = () => {
           <div className="flex  flex-1/2">
             {/* <img src="../../Images/contact.jpg" className="h-120  w-full" alt="" /> */}
             <form onSubmit={handleSubmit} className="space-y-4 w-full">
+                <h2 className="font-bold text-2xl">Tell Us about your project</h2>
               <div>
                 <label className="block text-sm font-medium">Name</label>
                 <input
