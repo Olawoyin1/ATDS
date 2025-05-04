@@ -1,52 +1,154 @@
-
+import { useState, FormEvent } from "react";
 const Contact = () => {
-    return (
-      <div className="py-10 mt-14" id="contact">
-          <div className="container">
-              <div className="md:flex gap-8">
-                  <div className="flex  flex-1/2">
-                      <img src="../../Images/contact.jpg" className="h-120  w-full" alt="" />
-                  </div>
-                  <div className="flex mt-10 md:mt-0 flex-col gap-4 flex-1/2">
-                     <h4 className="cf font-bold text-2xl">Contact Information</h4>
-                     <div>
-                      <p className="text-gray-500 cf mb-4">With decades of hands-on experience in delivering high-end construction solutions, ATDevelopments has earned a reputation as a trusted expert in complex residential and commercial projects across the UK. </p>
-  
-                      <p className="text-gray-500 headings">If you’re planning a project or simply want to learn more about our services and how we work, we’d love to hear from you. Reach out today and a member of our team will be happy to assist.</p>
-  
-                      <div className="flex mt-7 justify-between">
-                          
-                          <div className="flex text-gray-600 flex-col gap-3">
-                              <h2 className="cf font-bold text-black">Business Hours</h2>
-                              <p>Monday to Friday <br />8:00 am to 6:00 pm</p>
-                              <p className="mt-2">Office@atds.uk <br />
-                                  +44 9809 423</p>
-                                  
-                          </div>
-  
-                          <div className="flex flex-col text-gray-600 gap-3">
-                              <h2 className="cf font-bold text-black">Contact</h2>
-                              <p>West London <br />
-                                  Acton <br />
-                                  W3 7BS </p>
-  
-                                  
-                          </div>
-  
-                          <div className="flex flex-col text-gray-600 gap-3">
-                              <h2 className="cf text-black font-bold">follow</h2>
-                              <p>Instagram</p>
-  
-                                  <p>LinkedIn</p>
-                                  <p>Twitter</p>
-                          </div>
-                      </div>
-                     </div>
-                  </div>
+
+    const [showTerms, setShowTerms] = useState(false);
+    const [showPrivacy, setShowPrivacy] = useState(false);
+
+    const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        alert("Message sent! We'll get back to you shortly.");
+        e.currentTarget.reset();
+      };
+
+  return (
+    <div className="py-10 mt-20" id="contact">
+        
+      <div className="container">
+        <div className="md:flex gap-14">
+          <div className="flex  flex-1/2">
+            {/* <img src="../../Images/contact.jpg" className="h-120  w-full" alt="" /> */}
+            <form onSubmit={handleSubmit} className="space-y-4 w-full">
+              <div>
+                <label className="block text-sm font-medium">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  required
+                  className="w-full mt-1 px-4 py-2 border rounded-md focus:ring focus:outline-none"
+                />
               </div>
+              <div>
+                <label className="block text-sm font-medium">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  className="w-full mt-1 px-4 py-2 border rounded-md focus:ring focus:outline-none"
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium">Message</label>
+                <textarea
+                  name="message"
+                  rows={5}
+                  required
+                  className="w-full mt-1 px-4 py-2 border rounded-md focus:ring focus:outline-none"
+                />
+              </div>
+              <button
+                type="submit"
+                className="w-full bg-black text-white py-2 rounded-md hover:bg-gray-800 transition"
+              >
+                Send Message
+              </button>
+            </form>
           </div>
+          <div className="flex mt-10 md:mt-0 flex-col gap-4 flex-1/2">
+            <h4 className="font-bold text-2xl">Contact Information</h4>
+            <div>
+              <p className="text-gray-500  mb-4">
+                With decades of hands-on experience in delivering high-end
+                construction solutions, ATDevelopments has earned a reputation
+                as a trusted expert in complex residential and commercial
+                projects across the UK.{" "}
+              </p>
+
+              <p className="text-gray-500 headings">
+                If you’re planning a project or simply want to learn more about
+                our services and how we work, we’d love to hear from you. Reach
+                out today and a member of our team will be happy to assist.
+              </p>
+
+              <div className="flex mt-7 justify-between">
+                <div className="flex text-gray-600 flex-col gap-3">
+                  <h2 className="font-bold text-black">Business Hours</h2>
+                  <p>
+                    Monday to Friday <br />
+                    8:00 am to 6:00 pm
+                  </p>
+                  <p className="mt-2">
+                    Office@atds.uk <br />
+                    +44 9809 423
+                  </p>
+                </div>
+
+                <div className="flex flex-col text-gray-600 gap-3">
+                  <h2 className="font-bold text-black">Contact</h2>
+                  <p>
+                    West London <br />
+                    Acton <br />
+                    W3 7BS{" "}
+                  </p>
+                </div>
+
+                <div className="flex gap-3 flex-col">
+                    <p onClick={() => setShowTerms(true)} className="underline hover:text-black">
+                        Terms & Conditions
+                    </p>
+                    <p onClick={() => setShowPrivacy(true)} className="underline hover:text-black">
+                        Privacy Policy
+                    </p>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    )
-  }
-  
-  export default Contact
+
+
+         {/* Terms Modal */}
+      {showTerms && (
+        <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-50">
+          <div className="bg-white rounded-lg max-w-lg w-full p-6 relative">
+            <h3 className="text-xl font-semibold mb-4">Terms & Conditions</h3>
+            <p className="text-sm text-gray-700 overflow-y-auto max-h-[300px]">
+              These are standard placeholder terms and conditions. Please replace them with your company’s legal content.
+              Example: By accessing this website, you agree to be bound by these terms of service, all applicable laws, and regulations...
+            </p>
+            <button
+              onClick={() => setShowTerms(false)}
+              className="absolute top-2 right-3 text-gray-600 text-xl"
+            >
+              &times;
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* Privacy Modal */}
+      {showPrivacy && (
+        <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-50">
+          <div className="bg-white rounded-lg max-w-lg w-full p-6 relative">
+            <h3 className="text-xl font-semibold mb-4">Privacy Policy</h3>
+            <p className="text-sm text-gray-700 overflow-y-auto max-h-[300px]">
+              This is placeholder privacy policy content based on standard guidelines. Example: We collect personal information you provide to us...
+              We do not sell or share your data without consent...
+            </p>
+            <button
+              onClick={() => setShowPrivacy(false)}
+              className="absolute top-2 right-3 text-gray-600 text-xl"
+            >
+              &times;
+            </button>
+          </div>
+        </div>
+      )}
+
+
+
+    </div>
+  );
+};
+
+export default Contact;
+

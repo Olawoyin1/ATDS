@@ -1,4 +1,5 @@
 import Hero from "../components/Hero"
+import Testimonials from "../components/Testimonials";
 import ProjectCard from "../components2/ProjectCard";
 import projects from '../Projects'
 
@@ -20,6 +21,7 @@ const Home = () => {
         </div>
         <p></p>
     </div>
+    <Testimonials />
     </>
   )
 }
