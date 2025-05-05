@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { MdOutlineArrowRightAlt } from "react-icons/md";
+// import { MdOutlineArrowRightAlt } from "react-icons/md";
 
 interface ProjectCardProps {
     title: string;
