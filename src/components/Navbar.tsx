@@ -621,11 +621,19 @@ const MainNavbar = () => {
           </div>
 
           {/* Fade-in Mobile Menu */}
-          <div
-            className={`fixed top-0 left-0 w-full h-full bg-white text-black z-40 md:hidden transition-all duration-300 ease-in-out ${
+          {/* <div
+            className={`fixed top-0 left-0 w-full h-full bg-white text-black z-40 md:hidden transition-all duration-500  ${
               isOpen ? "opacity-100 scale-100 pointer-events-auto" : "opacity-0 scale-95 pointer-events-none"
             }`}
+          > */}
+          <div
+            className={`
+              fixed top-0 left-0 w-full h-full bg-white text-black z-40 md:hidden
+               transition-all duration-500 
+              ${isOpen ? "opacity-100  pointer-events-auto" : "opacity-0  pointer-events-none"}
+            `}
           >
+
             <div className="flex justify-end items-center px-4 py-4">
               <button onClick={toggleMenu}>
                 <FiX size={26} />

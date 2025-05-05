@@ -28,11 +28,11 @@ const Feedback = () => {
     <div className="container py-20">
 
         <h1 className="text-center mt-10 text-bold text-3xl">Clients Feedback</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10">
 
         {testimonials.map((t, i) => (
-            <div key={i} className="px-4 pb-7">
-                      <div className="sb text-wite min-h-[270px] h-full border p-6 rounded ">
+            <div key={i} className="">
+                      <div className="sb text-wite min-h-[270px] h-full border-0 p-6 rounded ">
                       <BiSolidQuoteLeft className="mb-4 text-[#F8B44F]" size={30}  />
                         <p className=" mb-4 italic">"{t.quote}"</p>
                         <h4 className="font-bold text-[#F8B44F] text-right">- {t.name}</h4>
