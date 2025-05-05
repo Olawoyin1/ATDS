@@ -161,14 +161,14 @@ const Projects = () => {
   return (
     <section className="py-16 mt-14 bg-white">
       <div className="container mx-auto">
-        <h2 className="text-3xl font-extrabold uppercase text-center mb-12">Projects</h2>
+        <h2 className="text-3xl  uppercase text-center mb-12">Projects</h2>
 
         <div className="flex flex-wrap  justify-center gap-4 mb-10">
           {['All', 'Private Development', 'Residential'].map((cat) => (
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
-              className={`px-4 py-2 rounded-md uppercase border transition font-bold ${
+              className={`px-4 py-2 rounded-md uppercase border transition  ${
                 activeCategory === cat
                   ? 'bg-[#F8B44F] text-white'
                   : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-100'

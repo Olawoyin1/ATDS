@@ -598,7 +598,7 @@ const MainNavbar = () => {
                 <span className="p-0 m-0 cf font-extrabold">ATDS</span>
                 <span className="text-[11px] mb-1">AT Developments</span>
               </Link>
-              <nav className="flex space-x-6 text-sm font-bold uppercase">
+              <nav className="flex space-x-6 text-sm  uppercase">
                 <Link to="/" className="hover:text-[#F8B44F] transition ease-in">Home</Link>
                 <Link to="/about" className="hover:text-[#F8B44F] transition ease-in">About</Link>
                 <Link to="/services" className="hover:text-[#F8B44F] transition ease-in">Services</Link>

@@ -198,7 +198,7 @@ const Contact = () => {
         <div className="md:flex gap-14">
           <div className="flex flex-1/2">
             <form  className="space-y-4 w-full">
-              <h2 className="font-bold text-2xl">Tell Us about your project</h2>
+              <h2 className=" text-2xl">Tell Us about your project</h2>
               <div>
                 <label className="block text-sm font-medium">Name</label>
                 <input
@@ -238,7 +238,7 @@ const Contact = () => {
             </form>
           </div>
           <div className="flex mt-10 md:mt-0 flex-col gap-4 flex-1/2">
-            <h4 className="font-bold text-2xl">Contact Information</h4>
+            <h4 className="text-2xl">Contact Information</h4>
             <div>
               <p className="text-gray-500 mb-4">
                 With decades of hands-on experience in delivering high-end
@@ -255,7 +255,7 @@ const Contact = () => {
 
               <div className="flex mt-7 justify-between">
                 <div className="flex text-gray-600 flex-col gap-3">
-                  <h2 className="font-bold text-black">Business Hours</h2>
+                  <h2 className="text-black">Business Hours</h2>
                   <p>
                     Monday to Friday <br />
                     8:00 am to 6:00 pm
@@ -267,7 +267,7 @@ const Contact = () => {
                 </div>
 
                 <div className="flex flex-col text-gray-600 gap-3">
-                  <h2 className="font-bold text-black">Contact</h2>
+                  <h2 className="text-black">Contact</h2>
                   <p>
                     West London <br />
                     Acton <br />
