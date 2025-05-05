@@ -16,6 +16,34 @@
   font-style: normal;
 }
 
+.hb{
+  background-color: #2F2F2F;
+  /* background-color: rgb(24, 24, 37); */
+  color: #ffffff;
+}
+
+.sc{
+  color: #2F2F2F;
+}
+
+.bc{
+  border-color: #2F2F2F;
+  /* border-color: rgb(7, 56, 56); */
+}
+
+.sb{
+  background-color: #2F2F2F;
+  /* background-color: rgb(7, 56, 56); */
+  border-color: 2F2F2F;
+  color: white;
+}
+
+body{
+  overflow-x: hidden;
+  color: black;
+  background-color: #f0f0f0cb;
+}  
+
 *{
     /* border: 1px solid red; */
     box-sizing: border-box !important;
@@ -30,7 +58,7 @@
 }
 
 p{
-  font-size: 14px;
+  font-size: 14.4px;
 }  
 
 
@@ -42,10 +70,6 @@ button{
   cursor: pointer;
 }  
 
-body{
-  overflow-x: hidden;
-  color: black;
-}  
 
 .container{
   max-width: 80%;
@@ -57,11 +81,12 @@ body{
 
 /* Works on Chrome, Edge, and Safari */
 ::-webkit-scrollbar {
-    width: 0.9rem;
+    width: 0.7rem;
     height: 1rem;
   }
   
   ::-webkit-scrollbar-track {
+    
     background: #636363;
   }
   

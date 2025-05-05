@@ -1,9 +1,9 @@
 const Projects = [
   {
-    title: "Uxbridge Project 2024 COMPLETION - LONDON - NEW BUILD - 20 APARTMENTS & 3 RETAIL UNITS",
+    title: "Paramount House, Uxbridge – Mixed-Use Development with 33 Apartments & 3 Retail Units",
     slug: "uxbridge-project-2024-completion",
     description:
-      "High-spec apartments with integrated retail space, finished to modern luxury standards. Situated in the heart of Uxbridge.",
+      "Design and construction of a new-build mixed-use development comprising 33 residential apartments and 3  retail units. The project included full site clearance, enabling works, and steel frame. Residential units were completed to high specification with open-plan layouts, integrated kitchens, LVT flooring, and modern bathrooms.",
     images: [
       "../Images/projects/Uxbridge Project/ux.jpg",
       "../Images/projects/Uxbridge Project/ux1.jpg",
@@ -25,10 +25,10 @@ const Projects = [
     category: "Private Development",
   },
   {
-    title: "hereford House Project 2024 COMPLETION - LONDON - NEW BUILD - 33 APARTMENTS & 3 RETAIL UNITS",
+    title: "Hereford House, Mayfair – High-End Flat Reconfiguration with Smart Home Integration",
     slug: "hereford-project-2024-completion",
     description:
-      "High-spec apartments with integrated retail space, finished to modern luxury standards. Situated in the heart of Uxbridge.",
+      "Complete modernisation and internal refurbishment of a luxury residence. The scope of works included full reconfiguration of internal layouts to optimise space and function, installation of bespoke Italian kitchen and bathroom fittings, smart home automation, and complete rewiring and replumbing. All works were delivered with a focus on minimal disruption to neighbouring flats. ",
     images: [
       "../Images/projects/Hereford House - London/hereford.JPG",
       "../Images/projects/Hereford House - London/hereford1.JPG",
@@ -45,10 +45,10 @@ const Projects = [
     category: "Private Development",
   },
   {
-    title: "29 Shaa Road - Acton W3 - NEW BUILD - 19 APARTMENTS",
+    title: "Shaa Road, Acton (Plot 1) – Full New-Build Residential House with Turnkey Finish",
     slug: "sr29-project-2021-completion",
     description:
-      "Boutique apartments with urban finishes, open-plan layouts, and eco-conscious features located in Hackney.",
+      "Complete construction of a new-build residential house from groundworks through to final interior finishes. Works included piling and reinforced concrete foundations, structural brickwork, roof construction, full MEP (mechanical, electrical, and plumbing) installation, insulation, glazing, floor screeding, plastering, tiling, and interior decorating. Landscaping and driveway works were also completed to provide a full turnkey finish.",
     images: [
       "../Images/projects/29 shaa road/sr.jpg",
       "../Images/projects/29 shaa road/sr1.jpg",
@@ -64,10 +64,10 @@ const Projects = [
     category: "Residential",
   },
   {
-    title: "27 Shaa Road - Acton W3 - NEW BUILD - 9 APARTMENTS",
+    title: "Shaa Road, Acton (Plot 2) – Matching New-Build Residential Property",
     slug: "sr27-project-2021-completion",
     description:
-      "Boutique apartments with urban finishes, open-plan layouts, and eco-conscious features located in Hackney.",
+      "New-build residential property constructed to match adjacent development.",
     images: [
       "../Images/projects/27 Shaa Road - Acton W3/shaa.JPG",
       "../Images/projects/27 Shaa Road - Acton W3/shaa1.JPG",
@@ -82,10 +82,10 @@ const Projects = [
     category: "Residential",
   },
   {
-    title: "HACKNEY Project 2024 completion - NEW BUILD - 7 APARTMENTS",
+    title: "Bastion House, Hackney – Boutique Luxury Apartment Development (9 Units)",
     slug: "hackney-project-2020-completion",
     description:
-      "Newly completed residential development featuring 10 contemporary apartments in the Hackney district.",
+      "Boutique new-build development of 9 high-specification luxury apartments in a contemporary architectural style. The project included demolition of existing structures, substructure works, RC Frame and traditional brick construction, Interiors featured bespoke joinery, underfloor heating, smart home wiring, and luxury fittings throughout. Communal and private outdoor spaces were also included.",
     images: [
       "../Images/projects/Hackney Project/hackney.JPG",
       "../Images/projects/Hackney Project/hackney1.JPG",
@@ -127,10 +127,10 @@ const Projects = [
     category: "Private Development",
   },
   {
-    title: "2c shaa road Project 2020 completion - NEW BUILD - 10 APARTMENTS",
+    title: "2C Shaa Road, Acton – Contemporary Flat Refurbishment & Furnishing",
     slug: "sr2c-project-2020-completion",
     description:
-      "Newly completed residential development featuring 10 contemporary apartments in the Hackney district.",
+      "Internal refurbishment and furnishing of a residential unit. Works included plastering, painting, bespoke cabinetry, flooring upgrades, lighting installations, and full furniture fit out. The project was delivered to a high contemporary standard, ready for immediate occupancy",
     images: [
       "../Images/projects/2c shaa road/2c11.png",
       "../Images/projects/2c shaa road/2c.jpg",
@@ -147,10 +147,10 @@ const Projects = [
     category: "Private Development",
   },
   {
-    title: "Chalrles Street - London Mayfar Project 2024 completion - NEW BUILD - 12 APARTMENTS",
+    title: "Charles Street, Mayfair – Grade II Listed Townhouse Refurbishment with Indoor Pool",
     slug: "charles-project-2024-completion",
     description:
-      "Newly completed residential development featuring 10 contemporary apartments in the Hackney district.",
+      "Full internal refurbishment of a Grade II listed luxury townhouse in the heart of Mayfair. The project involved complete strip-out of the existing interior, sympathetic structural alterations in line with conservation requirements, and full MEP (mechanical, electrical, and plumbing) upgrade to modern standards while preserving listed features. Works included installation of a bespoke indoor swimming pool in the basement, creation of a lightwell in the rear courtyard to enhance natural light, and incorporation of high-end finishes such as marble bathrooms, custom hardwood joinery, underfloor heating, and advanced lighting systems. Coordination with listed building control officers and heritage consultants was integral throughout the project",
     images: [
       "../Images/projects/Chalrles Street - London Mayfar/cs.jpg",
       "../Images/projects/Chalrles Street - London Mayfar/cs1.jpg",

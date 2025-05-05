@@ -2,13 +2,13 @@
 import { Link } from "react-router-dom";
 const Footer = () => {
   return (
-    <footer className="py-12">
+    <footer className="py-12 hb">
       <div className="container mx-auto grid gap-10 sm:grid-cols-1 md:grid-cols-4">
         {/* ATDevelopments Section - Full Width on Small */}
         <div className="sm:col-span-1 md:col-span-1">
           <h3 className="text-xl font-semibold">ATDS</h3>
           <span className="text-sm">AT Developments</span>
-          <p className="text-gray-900">West London <br />
+          <p className="">West London <br />
                                 Acton <br />
                                 W3 7BS </p>
         </div>

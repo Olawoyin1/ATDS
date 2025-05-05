@@ -228,7 +228,7 @@ const Contact = () => {
               </div>
               <button
                 type="submit"
-                className="w-full bg-black text-white py-2 rounded-md hover:bg-gray-800 transition"
+                className="w-full sb text-white py-2 rounded-md hover:bg-gray-800 transition"
               >
                 Send Message
               </button>
@@ -255,7 +255,7 @@ const Contact = () => {
 
               <div className="flex mt-7 justify-between">
                 <div className="flex text-gray-600 flex-col gap-3">
-                  <h2 className="text-black">Business Hours</h2>
+                  <h2 className=" text-black">Business Hours</h2>
                   <p>
                     Monday to Friday <br />
                     8:00 am to 6:00 pm

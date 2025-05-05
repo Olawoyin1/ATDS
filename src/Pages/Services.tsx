@@ -47,7 +47,7 @@ const Services = () => {
   ];
 
   return (
-    <section className="mt-10 py-16 bg-white">
+    <section className="mt-10 py-16">
       {/* <Loader /> */}
       <div className="container mx-auto space-y-20">
         <h2 className="text-3xl  text-center uppercase mb-10">Our Services</h2>
@@ -75,7 +75,7 @@ const Services = () => {
                   className="w-full sm:min-h-[400px] object-cover"
                 /> */}
 
-                  <h4 className="text-4xl cf md:text-9xl font-bold text-gray-300">
+                  <h4 className="text-4xl cf md:text-9xl font-bold sc">
                     0{index + 1}
                   </h4>
               </div>
@@ -84,7 +84,7 @@ const Services = () => {
                   index % 2 === 0
                     ? 'md:border-r-4 md:pr-8'
                     : 'md:border-l-4 md:pl-8'
-                } border-[#F8B44F]`}
+                } bc`}
               >
                 <div className="flex items-center md:items-start md:flex-col    gap-3">
                   

@@ -32,9 +32,9 @@ const Feedback = () => {
 
         {testimonials.map((t, i) => (
             <div key={i} className="px-4 pb-7">
-                      <div className="bg-white min-h-[270px] h-full border-2 border-[#F8B44F] p-6 rounded ">
+                      <div className="sb text-wite min-h-[270px] h-full border p-6 rounded ">
                       <BiSolidQuoteLeft className="mb-4 text-[#F8B44F]" size={30}  />
-                        <p className="text-gray-700 mb-4 italic">"{t.quote}"</p>
+                        <p className=" mb-4 italic">"{t.quote}"</p>
                         <h4 className="font-bold text-[#F8B44F] text-right">- {t.name}</h4>
                       </div>
                     </div>

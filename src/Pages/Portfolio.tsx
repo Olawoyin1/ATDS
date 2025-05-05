@@ -159,7 +159,7 @@ const Projects = () => {
       : projects.filter((project) => project.category === activeCategory);
 
   return (
-    <section className="py-16 mt-14 bg-white">
+    <section className="py-16 mt-14">
       <div className="container mx-auto">
         <h2 className="text-3xl  uppercase text-center mb-12">Projects</h2>
 
@@ -170,7 +170,7 @@ const Projects = () => {
               onClick={() => setActiveCategory(cat)}
               className={`px-4 py-2 rounded-md uppercase border transition  ${
                 activeCategory === cat
-                  ? 'bg-[#F8B44F] text-white'
+                  ? 'hb text-white'
                   : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-100'
               }`}
             >

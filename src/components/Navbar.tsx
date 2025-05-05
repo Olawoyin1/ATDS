@@ -580,17 +580,17 @@ const MainNavbar = () => {
   }, [isHomePage, isProjectDetailPage, isOpen]);
 
   const navbarClasses = () => {
-    if (isHomePage) return "bg-white shadow-sm";
+    if (isHomePage) return "hb shadow-sm";
     if (isProjectDetailPage) {
-      return scrolledPast100 ? "bg-white shadow text-black" : "bg-transparent text-white";
+      return scrolledPast100 ? "hb shadow text-black" : "bg-transparent text-white";
     }
-    return "bg-white shadow";
+    return "hb shadow";
   };
 
   return (
     <>
       {showNavbar && (
-        <header className={`fixed top-0 left-0 w-full z-950 transition duration-300 ${navbarClasses()}`}>
+        <header className={`fixed top-0 hb left-0 w-full z-950 transition duration-300 ${navbarClasses()}`}>
           <div className="container mx-auto">
             {/* Desktop Navbar */}
             <div className="hidden md:flex justify-between items-center py-4">

@@ -77,7 +77,7 @@ const ProjectDetails = () => {
 
   
   return (
-    <div className="">
+    <div className="pb-10">
       <div className="proj-cover mb-10 relative h-[100vh]">
         {/* Background Image */}
         <img src={project.images[0]} className="w-full h-full object-cover" alt="" />
@@ -90,7 +90,8 @@ const ProjectDetails = () => {
 
       <div className="container mx-auto">
         <h1 className="text-xl sm:text-3xl uppercase  mb-6">{project.title}</h1>
-        <p className="text-gray-900 mb-8">{project.description}</p>
+        <h4 className="text-3xl mb-3 sc text-center">SCOPE</h4>
+        <span className="text-gray-900 block  mb-8 text-xl">{project.description}</span>
 
       </div>
         {/* <Slider ref={sliderRef} {...settings}>
@@ -143,13 +144,13 @@ const ProjectDetails = () => {
          <div className="hidden sm:flex justify-center gap-6 mt-6">
           <button
             onClick={() => sliderRef.current?.slickPrev()}
-            className="bg-gray-800 text-white px-5 py-3  hover:bg-gray-600 transition"
+            className="sb text-white px-5 py-3  hover:bg-gray-600 transition"
           >
             ← 
           </button>
           <button
             onClick={() => sliderRef.current?.slickNext()}
-            className="bg-gray-800 text-white px-5 py-3  hover:bg-gray-600 transition"
+            className="sb text-white px-5 py-3  hover:bg-gray-600 transition"
           >
              →
           </button>
