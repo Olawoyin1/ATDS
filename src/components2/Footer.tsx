@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="sm:col-span-1 md:col-span-1">
           <h3 className="text-xl font-semibold">ATDS</h3>
           <span className="text-sm">AT Developments</span>
-          <p className="text-gray-700">West London <br />
+          <p className="text-gray-900">West London <br />
                                 Acton <br />
                                 W3 7BS </p>
         </div>

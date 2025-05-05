@@ -84,14 +84,13 @@ const ProjectDetails = () => {
 
         {/* Overlay Content */}
         <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center text-white px-4">
-          <h1 className="max-w-4xl text- md:text-4xl font-bold mb-4">{project.title}</h1>
-          {/* <p className="text-lg md:text-xl max-w-2xl">This is a short project description that sits on top of the image cover and grabs attention.</p> */}
+          <h1 className="max-w-4xl text- md:text-4xl uppercase mb-4">{project.title}</h1>
         </div>
       </div>
 
       <div className="container mx-auto">
-        <h1 className="text-xl sm:text-3xl uppercase font-bold mb-6">{project.title}</h1>
-        <p className="text-gray-600 mb-8">{project.description}</p>
+        <h1 className="text-xl sm:text-3xl uppercase  mb-6">{project.title}</h1>
+        <p className="text-gray-900 mb-8">{project.description}</p>
 
       </div>
         {/* <Slider ref={sliderRef} {...settings}>
