@@ -90,7 +90,7 @@ const ProjectDetails = () => {
 
       <div className="container mx-auto">
         <h1 className="text-xl sm:text-3xl uppercase  mb-6">{project.title}</h1>
-        <h4 className="text-3xl mb-3 sc text-center">SCOPE</h4>
+        <h1 className="text-xl sm:text-3xl my-3 text-center">SCOPE</h1>
         <span className="text-gray-900 block  mb-8 text-xl">{project.description}</span>
 
       </div>
