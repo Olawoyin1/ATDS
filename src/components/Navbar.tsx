@@ -543,6 +543,135 @@
 
 
 
+// import { useState, useEffect } from "react";
+// import { FiX } from "react-icons/fi";
+// import { HiOutlineMenuAlt4 } from "react-icons/hi";
+// import { useLocation, Link } from "react-router-dom";
+
+// const MainNavbar = () => {
+//   const [isOpen, setIsOpen] = useState(false);
+//   const [showNavbar, setShowNavbar] = useState(false);
+//   const [scrolledPast100, setScrolledPast100] = useState(false);
+//   const location = useLocation();
+
+//   const isHomePage = location.pathname === "/";
+//   const isProjectDetailPage =
+//     location.pathname.startsWith("/projects/") && location.pathname !== "/projects";
+
+//   const toggleMenu = () => setIsOpen(!isOpen);
+
+//   useEffect(() => {
+//     const handleScroll = () => {
+//       const scrollY = window.scrollY;
+
+//       if (isProjectDetailPage) {
+//         setShowNavbar(scrollY > 100);
+//         setScrolledPast100(scrollY > 100);
+//       } else if (isHomePage) {
+//         setShowNavbar(isOpen || scrollY > 140);
+//       } else {
+//         setShowNavbar(true);
+//       }
+//     };
+
+//     handleScroll();
+//     window.addEventListener("scroll", handleScroll);
+//     return () => window.removeEventListener("scroll", handleScroll);
+//   }, [isHomePage, isProjectDetailPage, isOpen]);
+
+//   const navbarClasses = () => {
+//     if (isHomePage) return "hb shadow-sm";
+//     if (isProjectDetailPage) {
+//       return scrolledPast100 ? "hb shadow text-black" : "bg-transparent text-white";
+//     }
+//     return "hb shadow";
+//   };
+
+//   return (
+//     <>
+//       {showNavbar && (
+//         <header className={`fixed top-0 hb left-0 w-full z-950 transition duration-300 ${navbarClasses()}`}>
+//           <div className="container mx-auto">
+//             {/* Desktop Navbar */}
+//             <div className="hidden md:flex justify-between items-center py-4">
+//               <Link to="/" className="flex flex-col nav-logo py-1 px-3">
+//                 <span className="p-0 m-0 cf font-extrabold">ATDS | AT Developments</span>
+//                 <span className="text-[14px] mb-1">Professional Construction</span>
+//               </Link>
+//               <nav className="flex space-x-6 text-sm  uppercase">
+//                 <Link to="/" className="hover:text-[#F8B44F] transition ease-in">Home</Link>
+//                 <Link to="/about" className="hover:text-[#F8B44F] transition ease-in">About</Link>
+//                 <Link to="/services" className="hover:text-[#F8B44F] transition ease-in">Services</Link>
+//                 <Link to="/projects" className="hover:text-[#F8B44F] transition ease-in">Projects</Link>
+//                 {/* <Link to="/testimonials" className="hover:text-[#F8B44F] transition ease-in">Testimonials</Link> */}
+//                 <Link to="/contact" className="hover:text-[#F8B44F] transition ease-in">Contact</Link>
+//               </nav>
+//             </div>
+
+//             {/* Mobile Navbar */}
+//             <div className="md:hidden flex justify-between items-center py-4">
+//               <Link to="/" className="flex flex-col nav-logo py-1 px-3">
+//                 <span className="p-0 mt- cf text-xs font-bold">ATDS | AT Developments</span>
+//                 <span className="text-[11px] mb-1"> Professional Construction</span>
+//               </Link>
+//               <button onClick={toggleMenu}>
+//                 {isOpen ? <FiX size={26} /> : <HiOutlineMenuAlt4 size={26} />}
+//               </button>
+//             </div>
+//           </div>
+
+//           {/* Fade-in Mobile Menu */}
+//           {/* <div
+//             className={`fixed top-0 left-0 w-full h-full bg-white text-black z-40 md:hidden transition-all duration-500  ${
+//               isOpen ? "opacity-100 scale-100 pointer-events-auto" : "opacity-0 scale-95 pointer-events-none"
+//             }`}
+//           > */}
+//           <div
+//             className={`
+//               fixed top-0 left-0 w-full h-full bg-white text-black z-40 md:hidden
+//                transition-all duration-500 
+//               ${isOpen ? "opacity-100  pointer-events-auto" : "opacity-0  pointer-events-none"}
+//             `}
+//           >
+
+//             <div className="flex justify-end items-center px-4 py-4">
+//               <button onClick={toggleMenu}>
+//                 <FiX size={26} />
+//               </button>
+//             </div>
+//             <div className="px-8 flex flex-col pt-8 space-y-6 text-lg font-bold uppercase">
+//               <Link to="/" onClick={toggleMenu}>Home</Link>
+//               <Link to="/about" onClick={toggleMenu}>About</Link>
+//               <Link to="/services" onClick={toggleMenu}>Services</Link>
+//               <Link to="/projects" onClick={toggleMenu}>Projects</Link>
+//               {/* <Link to="/testimonials" onClick={toggleMenu}>Testimonials</Link> */}
+//               <Link to="/contact" onClick={toggleMenu}>Contact</Link>
+//             </div>
+//             <div className="absolute bottom-4 left-8">
+//               <p className="text-xs text-gray-500">
+//                 &copy; {new Date().getFullYear()} ATDevelopments - All Rights Reserved.
+//               </p>
+//             </div>
+//           </div>
+
+//           {/* Backdrop */}
+//           {isOpen && (
+//             <div
+//               className="fixed inset-0 bg-black/40 z-30 md:hidden"
+//               onClick={toggleMenu}
+//             />
+//           )}
+//         </header>
+//       )}
+//     </>
+//   );
+// };
+
+// export default MainNavbar;
+
+
+
+
 import { useState, useEffect } from "react";
 import { FiX } from "react-icons/fi";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
@@ -551,12 +680,9 @@ import { useLocation, Link } from "react-router-dom";
 const MainNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [showNavbar, setShowNavbar] = useState(false);
-  const [scrolledPast100, setScrolledPast100] = useState(false);
   const location = useLocation();
 
   const isHomePage = location.pathname === "/";
-  const isProjectDetailPage =
-    location.pathname.startsWith("/projects/") && location.pathname !== "/projects";
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -564,33 +690,28 @@ const MainNavbar = () => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
 
-      if (isProjectDetailPage) {
-        setShowNavbar(scrollY > 100);
-        setScrolledPast100(scrollY > 100);
-      } else if (isHomePage) {
+      if (isHomePage) {
         setShowNavbar(isOpen || scrollY > 140);
       } else {
         setShowNavbar(true);
       }
     };
 
-    handleScroll();
+    handleScroll(); // Run on mount
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [isHomePage, isProjectDetailPage, isOpen]);
+  }, [isHomePage, isOpen]);
 
   const navbarClasses = () => {
-    if (isHomePage) return "hb shadow-sm";
-    if (isProjectDetailPage) {
-      return scrolledPast100 ? "hb shadow text-black" : "bg-transparent text-white";
-    }
-    return "hb shadow";
+    return "hb shadow-sm";
   };
 
   return (
     <>
       {showNavbar && (
-        <header className={`fixed top-0 hb left-0 w-full z-950 transition duration-300 ${navbarClasses()}`}>
+        <header
+          className={`fixed top-0 left-0 w-full z-950 transition duration-300 ${navbarClasses()}`}
+        >
           <div className="container mx-auto">
             {/* Desktop Navbar */}
             <div className="hidden md:flex justify-between items-center py-4">
@@ -598,21 +719,20 @@ const MainNavbar = () => {
                 <span className="p-0 m-0 cf font-extrabold">ATDS | AT Developments</span>
                 <span className="text-[14px] mb-1">Professional Construction</span>
               </Link>
-              <nav className="flex space-x-6 text-sm  uppercase">
-                <Link to="/" className="hover:text-[#F8B44F] transition ease-in">Home</Link>
-                <Link to="/about" className="hover:text-[#F8B44F] transition ease-in">About</Link>
-                <Link to="/services" className="hover:text-[#F8B44F] transition ease-in">Services</Link>
-                <Link to="/projects" className="hover:text-[#F8B44F] transition ease-in">Projects</Link>
-                {/* <Link to="/testimonials" className="hover:text-[#F8B44F] transition ease-in">Testimonials</Link> */}
-                <Link to="/contact" className="hover:text-[#F8B44F] transition ease-in">Contact</Link>
+              <nav className="flex space-x-6 text-sm uppercase">
+                <Link to="/" className="hover:text-[#F8B44F] transition">Home</Link>
+                <Link to="/about" className="hover:text-[#F8B44F] transition">About</Link>
+                <Link to="/services" className="hover:text-[#F8B44F] transition">Services</Link>
+                <Link to="/projects" className="hover:text-[#F8B44F] transition">Projects</Link>
+                <Link to="/contact" className="hover:text-[#F8B44F] transition">Contact</Link>
               </nav>
             </div>
 
             {/* Mobile Navbar */}
             <div className="md:hidden flex justify-between items-center py-4">
               <Link to="/" className="flex flex-col nav-logo py-1 px-3">
-                <span className="p-0 mt-1 cf text-xs font-bold">ATDS | AT Developments</span>
-                <span className="text-[11px] mb-1"> Professional Construction</span>
+                <span className="p-0 mt-0 cf text-xs font-bold">ATDS | AT Developments</span>
+                <span className="text-[11px] mb-1">Professional Construction</span>
               </Link>
               <button onClick={toggleMenu}>
                 {isOpen ? <FiX size={26} /> : <HiOutlineMenuAlt4 size={26} />}
@@ -620,20 +740,14 @@ const MainNavbar = () => {
             </div>
           </div>
 
-          {/* Fade-in Mobile Menu */}
-          {/* <div
-            className={`fixed top-0 left-0 w-full h-full bg-white text-black z-40 md:hidden transition-all duration-500  ${
-              isOpen ? "opacity-100 scale-100 pointer-events-auto" : "opacity-0 scale-95 pointer-events-none"
-            }`}
-          > */}
+          {/* Mobile Menu */}
           <div
             className={`
               fixed top-0 left-0 w-full h-full bg-white text-black z-40 md:hidden
-               transition-all duration-500 
-              ${isOpen ? "opacity-100  pointer-events-auto" : "opacity-0  pointer-events-none"}
+              transition-all duration-500
+              ${isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}
             `}
           >
-
             <div className="flex justify-end items-center px-4 py-4">
               <button onClick={toggleMenu}>
                 <FiX size={26} />
@@ -644,7 +758,6 @@ const MainNavbar = () => {
               <Link to="/about" onClick={toggleMenu}>About</Link>
               <Link to="/services" onClick={toggleMenu}>Services</Link>
               <Link to="/projects" onClick={toggleMenu}>Projects</Link>
-              {/* <Link to="/testimonials" onClick={toggleMenu}>Testimonials</Link> */}
               <Link to="/contact" onClick={toggleMenu}>Contact</Link>
             </div>
             <div className="absolute bottom-4 left-8">

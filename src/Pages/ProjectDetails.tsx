@@ -77,8 +77,8 @@ const ProjectDetails = () => {
 
   
   return (
-    <div className="pb-10">
-      <div className="proj-cover mb-10 relative h-[100vh]">
+    <div className="mt-17 py-10">
+      <div className="proj-cover hidden mb-10 relative h-[100vh]">
         {/* Background Image */}
         <img src={project.images[0]} className="w-full h-full object-cover" alt="" />
 
@@ -89,9 +89,9 @@ const ProjectDetails = () => {
       </div>
 
       <div className="container mx-auto">
-        {/* <h1 className="text-xl sm:text-3xl uppercase  mb-6">{project.title}</h1> */}
-        <h1 className="text-xl sm:text-2xl my-3 text-center">SCOPE</h1>
-        <span className= "text-gray-900 block  mb-8 text-xl">{project.description}</span>
+        <h1 className="text-xl sm:text-3xl uppercase  mb-6">{project.title}</h1>
+        {/* <h1 className="text-xl sm:text-2xl my-3 text-center">SCOPE</h1> */}
+        <span className= "text-gray-600 block  mb-8 text-xl">{project.description}</span>
 
       </div>
         {/* <Slider ref={sliderRef} {...settings}>
