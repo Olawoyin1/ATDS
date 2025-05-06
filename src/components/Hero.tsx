@@ -142,7 +142,7 @@ const Hero = () => {
       <div className="absolute inset-0 flex items-center justify-center z-30">
         <div className="text-white p-3 pb-3 logo sm:py-5 sm:pb-6  sm:px-7">
           <h3 className="text-[13px] sm:text-3xl cf font-bold">ATDS | AT Developments</h3>
-          <span className="text-white/80 text-xs sm:text-[19px]">Prime Construction </span>
+          <span className="text-white/80 text-xs sm:text-[19px]">Professional Construction </span>
         </div>
       </div>
           
