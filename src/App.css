@@ -4,14 +4,14 @@
 
 @font-face {
   font-family: 'helvetica';
-  src: url('../public/Images/Helvetica/HelveticaNeueLTStd-400.otf') format('woff2');
+  src: url('../Images/Helvetica/HelveticaNeueLTStd-400.otf') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'helvetica-bold';
-  src: url('../public/Images/Helvetica/HelveticaNeueLTStd-bold.otf') format('woff2');
+  src: url('../Images/Helvetica/HelveticaNeueLTStd-bold.otf') format('woff2');
   font-weight: 700;
   font-style: normal;
 }

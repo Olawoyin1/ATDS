@@ -595,15 +595,15 @@ const MainNavbar = () => {
             {/* Desktop Navbar */}
             <div className="hidden md:flex justify-between items-center py-4">
               <Link to="/" className="flex flex-col nav-logo py-1 px-3">
-                <span className="p-0 m-0 cf font-extrabold">ATDS</span>
-                <span className="text-[11px] mb-1">AT Developments</span>
+                <span className="p-0 m-0 cf font-extrabold">ATDS | AT Developments</span>
+                <span className="text-[14px] mb-1">Professional Construction</span>
               </Link>
               <nav className="flex space-x-6 text-sm  uppercase">
                 <Link to="/" className="hover:text-[#F8B44F] transition ease-in">Home</Link>
                 <Link to="/about" className="hover:text-[#F8B44F] transition ease-in">About</Link>
                 <Link to="/services" className="hover:text-[#F8B44F] transition ease-in">Services</Link>
                 <Link to="/projects" className="hover:text-[#F8B44F] transition ease-in">Projects</Link>
-                <Link to="/testimonials" className="hover:text-[#F8B44F] transition ease-in">Testimonials</Link>
+                {/* <Link to="/testimonials" className="hover:text-[#F8B44F] transition ease-in">Testimonials</Link> */}
                 <Link to="/contact" className="hover:text-[#F8B44F] transition ease-in">Contact</Link>
               </nav>
             </div>
@@ -611,8 +611,8 @@ const MainNavbar = () => {
             {/* Mobile Navbar */}
             <div className="md:hidden flex justify-between items-center py-4">
               <Link to="/" className="flex flex-col nav-logo py-1 px-3">
-                <span className="p-0 m-0 cf font-extrabold">ATDS</span>
-                <span className="text-[11px] mb-1">AT Developments</span>
+                <span className="p-0 mt-1 cf text-xs font-bold">ATDS | AT Developments</span>
+                <span className="text-[11px] mb-1"> Professional Construction</span>
               </Link>
               <button onClick={toggleMenu}>
                 {isOpen ? <FiX size={26} /> : <HiOutlineMenuAlt4 size={26} />}
@@ -644,7 +644,7 @@ const MainNavbar = () => {
               <Link to="/about" onClick={toggleMenu}>About</Link>
               <Link to="/services" onClick={toggleMenu}>Services</Link>
               <Link to="/projects" onClick={toggleMenu}>Projects</Link>
-              <Link to="/testimonials" onClick={toggleMenu}>Testimonials</Link>
+              {/* <Link to="/testimonials" onClick={toggleMenu}>Testimonials</Link> */}
               <Link to="/contact" onClick={toggleMenu}>Contact</Link>
             </div>
             <div className="absolute bottom-4 left-8">
