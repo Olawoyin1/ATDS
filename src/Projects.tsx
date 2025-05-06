@@ -1,7 +1,7 @@
 const Projects = [
   {
     title: "Paramount House, Uxbridge – Mixed-Use Development with 33 Apartments & 3 Retail Units",
-    slug: "uxbridge-project-2024-completion",
+    slug: "paramount-uxbridge-project",
     description:
       "Design and construction of a new-build mixed-use development comprising 33 residential apartments and 3  retail units. The project included full site clearance, enabling works, and steel frame. Residential units were completed to high specification with open-plan layouts, integrated kitchens, LVT flooring, and modern bathrooms.",
     images: [
@@ -26,7 +26,7 @@ const Projects = [
   },
   {
     title: "Hereford House, Mayfair – High-End Flat Reconfiguration with Smart Home Integration",
-    slug: "hereford-project-2024-completion",
+    slug: "hereford-project",
     description:
       "Complete modernisation and internal refurbishment of a luxury residence. The scope of works included full reconfiguration of internal layouts to optimise space and function, installation of bespoke Italian kitchen and bathroom fittings, smart home automation, and complete rewiring and replumbing. All works were delivered with a focus on minimal disruption to neighbouring flats. ",
     images: [
@@ -46,7 +46,7 @@ const Projects = [
   },
   {
     title: "Shaa Road, Acton (Plot 1) – Full New-Build Residential House with Turnkey Finish",
-    slug: "sr29-project-2021-completion",
+    slug: "shaa-road-plot1",
     description:
       "Complete construction of a new-build residential house from groundworks through to final interior finishes. Works included piling and reinforced concrete foundations, structural brickwork, roof construction, full MEP (mechanical, electrical, and plumbing) installation, insulation, glazing, floor screeding, plastering, tiling, and interior decorating. Landscaping and driveway works were also completed to provide a full turnkey finish.",
     images: [
@@ -65,7 +65,7 @@ const Projects = [
   },
   {
     title: "Shaa Road, Acton (Plot 2) – Matching New-Build Residential Property",
-    slug: "sr27-project-2021-completion",
+    slug: "shaa-road-plot2",
     description:
       "New-build residential property constructed to match adjacent development.",
     images: [
@@ -83,7 +83,7 @@ const Projects = [
   },
   {
     title: "Bastion House, Hackney – Boutique Luxury Apartment Development (9 Units)",
-    slug: "hackney-project-2020-completion",
+    slug: "bastion-house-project",
     description:
       "Boutique new-build development of 9 high-specification luxury apartments in a contemporary architectural style. The project included demolition of existing structures, substructure works, RC Frame and traditional brick construction, Interiors featured bespoke joinery, underfloor heating, smart home wiring, and luxury fittings throughout. Communal and private outdoor spaces were also included.",
     images: [
@@ -106,7 +106,7 @@ const Projects = [
   },
   {
     title: "BRISTOL Project 2024 completion - NEW BUILD - 9 APARTMENTS",
-    slug: "bristol-project-2020-completion",
+    slug: "bristol-project-2024-completion",
     description:
       "Newly completed residential development featuring 10 contemporary apartments in the Hackney district.",
     images: [
@@ -128,7 +128,7 @@ const Projects = [
   },
   {
     title: "2C Shaa Road, Acton – Contemporary Flat Refurbishment & Furnishing",
-    slug: "sr2c-project-2020-completion",
+    slug: "2cshaa-road-project",
     description:
       "Internal refurbishment and furnishing of a residential unit. Works included plastering, painting, bespoke cabinetry, flooring upgrades, lighting installations, and full furniture fit out. The project was delivered to a high contemporary standard, ready for immediate occupancy",
     images: [
