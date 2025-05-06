@@ -94,7 +94,7 @@ const Testimonials = () => {
 
   return (
     <section className="py-12 px-4">
-      <div className="container mx-auto">
+      <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl  text-center mb-10 ">Client Feedback</h2>
         <Slider {...settings}>
           {testimonials.map((t, i) => (
