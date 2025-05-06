@@ -101,7 +101,7 @@ const Home = () => {
 
     {/* ========SERVICES SECTION HERE ========= */}
     <section className=" py-10">
-      <div className="container mx-auto space-y-10">
+    <div className="container mx-auto space-y-10">
         <h2 className="text-3xl  text-center uppercase mb-10">Our Services</h2>
         <p className="text-gray-900">
           ATDS offers a comprehensive range of construction services tailored to homeowners, developers, and commercial clients. Our expertise spans private residential developments, bespoke extensions, and basement conversions, all designed to enhance space and value. We deliver high-quality refurbishments that revitalise existing properties, as well as new builds. Our team also specialises in flat conversions, maximising the potential of properties through smart and compliant design.
@@ -127,7 +127,7 @@ const Home = () => {
                   className="w-full sm:min-h-[400px] object-cover"
                 /> */}
 
-                  <h4 className="text-4xl cf md:text-9xl font-bold sc">
+                  <h4 className="text-4xl hidden md:block cf md:text-9xl font-bold sc">
                     0{index + 1}
                   </h4>
               </div>
@@ -138,9 +138,11 @@ const Home = () => {
                     : 'md:border-l-4 md:pl-8'
                 } bc`}
               >
-                <div className="flex items-center md:items-start md:flex-col    gap-3">
-                  
-                  <h3 className="text-2xl uppercase">
+                <div className="flex items-center md:items-start md:flex-col    gap-2">
+                <h4 className="text-xl flex  md:hidden font-extrabold cf text-gray-600">
+                    0{index + 1}
+                  </h4>
+                  <h3 className="text-xl uppercase">
                     {service.title}
                   </h3>
                 </div>
