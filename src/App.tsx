@@ -91,6 +91,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Loader from "./components2/Loader";
 import Feedback from "./Pages/Feedback";
+// import Privacy from "./Pages/Privacy";
+// import TandC from "./Pages/TandC";
 // import Testimonials from "./component/TestimonialsPage";
 
 // Lazy imports
@@ -101,6 +103,8 @@ const Contact = lazy(() => import("./Pages/Contact"));
 const Portfolio = lazy(() => import("./Pages/Portfolio"));
 const ProjectDetails = lazy(() => import("./Pages/ProjectDetails"));
 const ErrorPage = lazy(() => import("./Pages/ErrorPage"));
+const TandC = lazy(() => import("./Pages/TandC"));
+const Privacy = lazy(() => import("./Pages/Privacy"));
 const SharedLayout = lazy(() => import("./components2/SharedLayout"));
 
 const main = createBrowserRouter(
@@ -126,6 +130,22 @@ const main = createBrowserRouter(
         element={
           <Suspense fallback={<Loader />}>
             <About />
+          </Suspense>
+        }
+      />
+      <Route
+        path="terms-and-conditions"
+        element={
+          <Suspense fallback={<Loader />}>
+            <TandC />
+          </Suspense>
+        }
+      />
+      <Route
+        path="privacy-policy"
+        element={
+          <Suspense fallback={<Loader />}>
+            <Privacy />
           </Suspense>
         }
       />

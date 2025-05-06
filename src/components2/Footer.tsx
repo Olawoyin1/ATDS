@@ -24,37 +24,6 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link to="/" className="hover:text-[#F8B44F]">
-                  Terms & Conditions
-                </Link>
-              </li>
-              <li>
-                <Link to="/" className="hover:text-[#F8B44F]">
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact" className="hover:text-[#F8B44F]">
-                  Contact
-                </Link>
-              </li>
-              <li>
-                <Link to="/" className="hover:text-[#F8B44F]">
-                  News
-                </Link>
-              </li>
-              <li>
-                <Link to="/services" className="hover:text-[#F8B44F]">
-                  Services
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Quick Links */}
           <div className="">
             <ul className="space-y-2 text-sm">
               <li>
@@ -77,13 +46,46 @@ const Footer = () => {
                   Projects
                 </Link>
               </li>
+              {/* <li>
+                <Link to="/contact" className="hover:text-[#F8B44F]">
+                  Contact
+                </Link>
+              </li> */}
+            </ul>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link to="/" className="hover:text-[#F8B44F]">
+                  Terms & Conditions
+                </Link>
+              </li>
+              <li>
+                <Link to="/terms-and-condition" className="hover:text-[#F8B44F]">
+                  Privacy Policy
+                </Link>
+              </li>
               <li>
                 <Link to="/contact" className="hover:text-[#F8B44F]">
                   Contact
                 </Link>
               </li>
+              {/* <li>
+                <Link to="/" className="hover:text-[#F8B44F]">
+                  News
+                </Link>
+              </li> */}
+              {/* <li>
+                <Link to="/services" className="hover:text-[#F8B44F]">
+                  Services
+                </Link>
+              </li> */}
             </ul>
           </div>
+
+          
 
           {/* socials */}
           {/* <div className="flex mt-4 sm:mt-0 gap-6">
