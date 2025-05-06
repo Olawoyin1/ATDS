@@ -74,7 +74,7 @@ const Services = () => {
                   className="w-full sm:min-h-[400px] object-cover"
                 /> */}
 
-                  <h4 className="text-4xl cf md:text-9xl font-bold sc">
+                  <h4 className="text-4xl hidden md:block cf md:text-9xl font-bold sc">
                     0{index + 1}
                   </h4>
               </div>
@@ -85,9 +85,11 @@ const Services = () => {
                     : 'md:border-l-4 md:pl-8'
                 } bc`}
               >
-                <div className="flex items-center md:items-start md:flex-col    gap-3">
-                  
-                  <h3 className="text-2xl uppercase">
+                <div className="flex items-center md:items-start md:flex-col    gap-2">
+                <h4 className="text-xl flex  md:hidden font-extrabold cf text-gray-600">
+                    0{index + 1}
+                  </h4>
+                  <h3 className="text-xl uppercase">
                     {service.title}
                   </h3>
                 </div>

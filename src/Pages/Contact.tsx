@@ -157,6 +157,7 @@
 
 
 import { useState } from "react";
+import { Link } from "react-router-dom";
 // import emailjs from "@emailjs/browser";
 
 // const SERVICE_ID = "your_service_id";
@@ -276,18 +277,16 @@ const Contact = () => {
                 </div>
 
                 <div className="flex gap-3 flex-col">
-                  <p
-                    onClick={() => setShowTerms(true)}
+                  <Link to='/terms-and-conditions'
                     className="underline hover:text-black cursor-pointer"
                   >
                     Terms & Conditions
-                  </p>
-                  <p
-                    onClick={() => setShowPrivacy(true)}
+                  </Link>
+                  <Link to="/privacy-policy"
                     className="underline hover:text-black cursor-pointer"
                   >
                     Privacy Policy
-                  </p>
+                  </Link>
                 </div>
               </div>
             </div>
