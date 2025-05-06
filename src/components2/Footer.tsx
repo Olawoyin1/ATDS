@@ -58,7 +58,7 @@ const Footer = () => {
           <div>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link to="/terms-and-consitions" className="hover:text-[#F8B44F]">
+                <Link to="/terms-and-conditions" className="hover:text-[#F8B44F]">
                   Terms & Conditions
                 </Link>
               </li>
