@@ -730,7 +730,7 @@ const MainNavbar = () => {
 
             {/* Mobile Navbar */}
             <div className="md:hidden flex justify-between items-center py-4">
-              <Link to="/" className="flex flex-col logo py-1 px-3">
+              <Link to="/" className="flex flex-col nav-logo py-1 px-3">
                 <span className="p-0 mt-1 cf text-xs font-bold">ATDS | AT Developments</span>
                 <span className="text-[11px] mb-1">Professional Construction</span>
               </Link>
