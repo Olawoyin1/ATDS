@@ -3,6 +3,8 @@ import Hero from "../components/Hero"
 import Testimonials from "../components/Testimonials";
 import ProjectCard from "../components2/ProjectCard";
 import projects from '../Projects'
+import ContactComponent from "../components2/ContactComponent";
+import ServicesComponent from "../components2/ServicesComponent";
 
 const Home = () => {
 
@@ -90,59 +92,7 @@ const Home = () => {
 
     {/* ========SERVICES SECTION HERE ========= */}
     <section className=" py-10">
-    <div className="container mx-auto space-y-10">
-        <h2 className="text-3xl  text-center uppercase mb-10">Our Services</h2>
-        <p className="text-gray-900">
-          ATDS offers a comprehensive range of construction services tailored to homeowners, developers, and commercial clients. Our expertise spans private residential developments, bespoke extensions, and basement conversions, all designed to enhance space and value. We deliver high-quality refurbishments that revitalise existing properties, as well as new builds. Our team also specialises in flat conversions, maximising the potential of properties through smart and compliant design.
-          <br />
-          <br />
-          For business clients, we provide professional commercial fit-out services that transform spaces into efficient, well-executed working environments. Whatever the scale or complexity of your project, we’re committed to delivering outstanding results.
-        </p>
-
-        {services.map((service, index) => {
-          const isReversed = index % 2 !== 0;
-
-          return (
-            <div
-              key={index}
-              className={`flex flex-col mb-9 md:mb-0 md:flex-row ${
-                isReversed ? "md:flex-row-reverse" : ""
-              } items-center`}
-            >
-              <div className="relative flex items-center justify-center md:w-1/3 w-full">
-                {/* <img
-                  src={service.image}
-                  alt={service.title}
-                  className="w-full sm:min-h-[400px] object-cover"
-                /> */}
-
-                  <h4 className="text-4xl hidden md:block cf md:text-9xl font-bold sc">
-                    0{index + 1}
-                  </h4>
-              </div>
-              <div
-                className={`md:w-2/3 w-full md:min-h-[300px] flex justify-center  md:items-start t md:text-start flex-col h-full space-y-4 md:px-6 ${
-                  index % 2 === 0
-                    ? 'md:border-r-4 md:pr-8'
-                    : 'md:border-l-4 md:pl-8'
-                } bc`}
-              >
-                <div className="flex items-center md:items-start md:flex-col    gap-2">
-                <h4 className="text-xl flex  md:hidden font-extrabold cf text-gray-600">
-                    0{index + 1}
-                  </h4>
-                  <h3 className="text-xl md:text-2xl uppercase">
-                    {service.title}
-                  </h3>
-                </div>
-                <p className="text-gray-900 leading-relaxed">
-                  {service.description}
-                </p>
-              </div>
-            </div>
-          );
-        })}
-      </div>
+    <ServicesComponent />
     </section>
 
     {/* ====PROJECT SECTION HERE====== */}
@@ -167,108 +117,7 @@ const Home = () => {
 
     {/* =======CONTSAT US HERE ======= */}
     <div className="py-10 " id="contact">
-      <div className="container">
-      <h2 className="text-3xl  text-center uppercase mb-10">Contact Us</h2>
-        <div className="md:flex gap-14">
-          <div className="flex flex-1/2">
-            <form  className="space-y-4 w-full">
-              <h2 className=" text-2xl">Tell Us about your project</h2>
-              <div>
-                <label className="block text-sm font-medium">Name</label>
-                <input
-                  type="text"
-                  name="name"
-                  required
-                  className="w-full mt-1 px-4 py-2 border rounded-md focus:ring focus:outline-none"
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-medium">Email</label>
-                <input
-                  type="email"
-                  name="email"
-                  required
-                  className="w-full mt-1 px-4 py-2 border rounded-md focus:ring focus:outline-none"
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-medium">Message</label>
-                <textarea
-                  name="message"
-                  rows={5}
-                  required
-                  className="w-full mt-1 px-4 py-2 border rounded-md focus:ring focus:outline-none"
-                />
-              </div>
-              <button
-                type="submit"
-                className="w-full sb text-white py-2 rounded-md hover:bg-gray-800 transition"
-              >
-                Send Message
-              </button>
-              {status && (
-                <p className="text-sm mt-2 text-gray-600">{status}</p>
-              )}
-            </form>
-          </div>
-          <div className="flex mt-10 md:mt-0 flex-col gap-4 flex-1/2">
-            <h4 className="text-2xl">Contact Information</h4>
-            <div>
-              <p className="text-gray-500 mb-4">
-                With decades of hands-on experience in delivering high-end
-                construction solutions, ATDevelopments has earned a reputation
-                as a trusted expert in complex residential and commercial
-                projects across the UK.
-              </p>
-
-              <p className="text-gray-500">
-                If you’re planning a project or simply want to learn more about
-                our services and how we work, we’d love to hear from you. Reach
-                out today and a member of our team will be happy to assist.
-              </p>
-
-              <div className="flex mt-7 justify-between">
-                <div className="flex text-gray-600 flex-col gap-3">
-                  <h2 className=" text-black">Business Hours</h2>
-                  <p>
-                    Monday to Friday <br />
-                    8:00 am to 6:00 pm
-                  </p>
-                  <p className="mt-2">
-                    Office@atds.uk <br />
-                    +44 9809 423
-                  </p>
-                </div>
-
-                <div className="flex flex-col text-gray-600 gap-3">
-                  <h2 className="text-black">Contact</h2>
-                  <p>
-                    West London <br />
-                    Acton <br />
-                    W3 7BS
-                  </p>
-                </div>
-
-                <div className="flex gap-3 flex-col">
-                  <Link to='/terms-and-conditions'
-                    className="underline hover:text-black cursor-pointer"
-                  >
-                    Terms & Conditions
-                  </Link>
-                  <Link to="/privacy-policy"
-                    className="underline hover:text-black cursor-pointer"
-                  >
-                    Privacy Policy
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      
-
+      <ContactComponent />
      
     </div>
     

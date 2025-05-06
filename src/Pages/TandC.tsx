@@ -1,14 +1,10 @@
 const TandC = () => {
   return (
     <div className="mt-10 py-16">
-      <div className="container text-[17px]">
+      <div className="container text-[14.9px]">
         
       <h2 className="text-3xl  text-center mb-10 ">Terms & Conditions</h2>
-        Effective Date: May 6, 2025 <br />
-        
-        
-        
-        <br />
+       
          Welcome to the ATDS   website. By accessing or using our Site, you agree to
         comply with and be bound by the following terms and conditions. If you do not agree to these Terms, please do not use the
         Site.  <br /><br />

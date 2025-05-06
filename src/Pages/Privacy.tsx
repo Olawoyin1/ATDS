@@ -1,12 +1,12 @@
 const Privacy = () => {
     return (
       <div className="mt-10 py-16">
-        <div className="container text-[17px]">      
+        <div className="container text-[14.9px]">      
           
           <h2 className="text-3xl  text-center my-10 ">Privacy Policy</h2>
           
            
-          Effective Date: May 6, 2025 <br /><br />
+         
           
           ATDS is committed to protecting your
           privacy. This Privacy Policy explains how we collect, use, and safeguard
