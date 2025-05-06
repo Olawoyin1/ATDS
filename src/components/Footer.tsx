@@ -1,10 +1,16 @@
+import { Link } from "react-router-dom";
 
 const MiniFooterAlt = () => {
   return (
     <footer className="bg-black cf text-gray-300 py-10">
       <div className="max-w-screen-lg mx-auto text-center px-4">
         {/* Logo or Site Name */}
-        <h2 className="text-2xl  font-semibold mb-4 tracking-wide">AT<span className="text-amber-100">Developments</span></h2>
+        {/* <h2 className="text-2xl  font-semibold mb-4 tracking-wide">AT<span className="text-amber-100">Developments</span></h2> */}
+
+           <Link to="/" className="flex flex-col nav-logo py-1 px-3">
+                <span className="p-0 mt-1 cf text-xs font-bold">ATDS | AT Developments</span>
+                <span className="text-[11px] mb-1">Professional Construction</span>
+            </Link>
 
         {/* Navigation Links */}
         <nav className="flex flex-wrap justify-center gap-6 text-sm mb-6">

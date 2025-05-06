@@ -6,8 +6,12 @@ const Footer = () => {
       <div className="container mx-auto grid gap-10 sm:grid-cols-1 md:grid-cols-4">
         {/* ATDevelopments Section - Full Width on Small */}
         <div className="sm:col-span-1 md:col-span-1">
-          <h3 className="text-xl font-semibold">ATDS</h3>
-          <span className="text-sm">AT Developments</span>
+          {/* <h3 className="text-xl font-semibold">ATDS</h3>
+          <span className="text-sm">AT Developments</span> */}
+          <Link to="/" className="flex flex-col ">
+                <span className="p-0 mt-1 cf text-xs font-bold">ATDS | AT Developments</span>
+                <span className="text-[11px] mb-1">Professional Construction</span>
+              </Link>
           <p className="">West London <br />
                                 Acton <br />
                                 W3 7BS </p>

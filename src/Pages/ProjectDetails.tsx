@@ -91,7 +91,7 @@ const ProjectDetails = () => {
       <div className="container mx-auto">
         <h1 className="text-xl sm:text-3xl uppercase  mb-6">{project.title}</h1>
         {/* <h1 className="text-xl sm:text-2xl my-3 text-center">SCOPE</h1> */}
-        <span className= "text-gray-600 block  mb-8 text-xl">{project.description}</span>
+        <p className= "text-gray-600 block  mb-8 text-xl">{project.description}</p>
 
       </div>
         {/* <Slider ref={sliderRef} {...settings}>

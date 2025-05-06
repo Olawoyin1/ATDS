@@ -79,17 +79,17 @@ const Services = () => {
                   </h4>
               </div>
               <div
-                className={`md:w-2/3 w-full md:min-h-[300px] flex justify-center items-center md:items-start text-center md:text-start flex-col h-full space-y-4 md:px-6 ${
+                className={`md:w-2/3 w-full md:min-h-[300px] flex justify-center  md:items-start  md:text-start flex-col h-full space-y-4 md:px-6 ${
                   index % 2 === 0
                     ? 'md:border-r-4 md:pr-8'
                     : 'md:border-l-4 md:pl-8'
                 } bc`}
               >
-                <div className="flex items-center md:items-start md:flex-col    gap-2">
+                <div className="flex  md:items-start md:flex-col    gap-2">
                 <h4 className="text-xl flex  md:hidden font-extrabold cf text-gray-600">
                     0{index + 1}
                   </h4>
-                  <h3 className="text-xl uppercase">
+                  <h3 className="text-xl md:text-2xl uppercase">
                     {service.title}
                   </h3>
                 </div>

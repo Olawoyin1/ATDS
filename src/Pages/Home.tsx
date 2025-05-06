@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Hero from "../components/Hero"
 import Testimonials from "../components/Testimonials";
 import ProjectCard from "../components2/ProjectCard";
@@ -53,20 +54,6 @@ const Home = () => {
   return (
     <>
     <Hero />
-    <div className="container py-10">
-      <div className="grid gap-7 sm:grid-cols-1 md:grid-cols-2">
-            {projects.map((project, index) => (
-              <ProjectCard
-                key={index}
-                title={project.title}
-                description={project.description}
-                image={project.images[0]}
-                slug={project.slug}
-              />
-            ))}
-        </div>
-        <p></p>
-    </div>
     {/* ========ABOUT US HERE ========= */}
     <div className="py-10" id="about">
         <div className="container">
@@ -98,6 +85,8 @@ const Home = () => {
 
         {/* <Testimonials /> */}
     </div>
+
+
 
     {/* ========SERVICES SECTION HERE ========= */}
     <section className=" py-10">
@@ -132,7 +121,7 @@ const Home = () => {
                   </h4>
               </div>
               <div
-                className={`md:w-2/3 w-full md:min-h-[300px] flex justify-center items-center md:items-start text-center md:text-start flex-col h-full space-y-4 md:px-6 ${
+                className={`md:w-2/3 w-full md:min-h-[300px] flex justify-center  md:items-start t md:text-start flex-col h-full space-y-4 md:px-6 ${
                   index % 2 === 0
                     ? 'md:border-r-4 md:pr-8'
                     : 'md:border-l-4 md:pl-8'
@@ -142,7 +131,7 @@ const Home = () => {
                 <h4 className="text-xl flex  md:hidden font-extrabold cf text-gray-600">
                     0{index + 1}
                   </h4>
-                  <h3 className="text-xl uppercase">
+                  <h3 className="text-xl md:text-2xl uppercase">
                     {service.title}
                   </h3>
                 </div>
@@ -155,6 +144,137 @@ const Home = () => {
         })}
       </div>
     </section>
+
+    {/* ====PROJECT SECTION HERE====== */}
+    <div className="container py-10">
+      
+    <h2 className="text-3xl  text-center uppercase mb-10">Projects</h2>
+      <div className="grid gap-7 sm:grid-cols-1 md:grid-cols-2">
+            {projects.map((project, index) => (
+              <ProjectCard
+                key={index}
+                title={project.title}
+                description={project.description}
+                image={project.images[0]}
+                slug={project.slug}
+              />
+            ))}
+        </div>
+        <p></p>
+    </div>
+    
+
+
+    {/* =======CONTSAT US HERE ======= */}
+    <div className="py-10 " id="contact">
+      <div className="container">
+      <h2 className="text-3xl  text-center uppercase mb-10">Contact Us</h2>
+        <div className="md:flex gap-14">
+          <div className="flex flex-1/2">
+            <form  className="space-y-4 w-full">
+              <h2 className=" text-2xl">Tell Us about your project</h2>
+              <div>
+                <label className="block text-sm font-medium">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  required
+                  className="w-full mt-1 px-4 py-2 border rounded-md focus:ring focus:outline-none"
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  className="w-full mt-1 px-4 py-2 border rounded-md focus:ring focus:outline-none"
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium">Message</label>
+                <textarea
+                  name="message"
+                  rows={5}
+                  required
+                  className="w-full mt-1 px-4 py-2 border rounded-md focus:ring focus:outline-none"
+                />
+              </div>
+              <button
+                type="submit"
+                className="w-full sb text-white py-2 rounded-md hover:bg-gray-800 transition"
+              >
+                Send Message
+              </button>
+              {status && (
+                <p className="text-sm mt-2 text-gray-600">{status}</p>
+              )}
+            </form>
+          </div>
+          <div className="flex mt-10 md:mt-0 flex-col gap-4 flex-1/2">
+            <h4 className="text-2xl">Contact Information</h4>
+            <div>
+              <p className="text-gray-500 mb-4">
+                With decades of hands-on experience in delivering high-end
+                construction solutions, ATDevelopments has earned a reputation
+                as a trusted expert in complex residential and commercial
+                projects across the UK.
+              </p>
+
+              <p className="text-gray-500">
+                If you’re planning a project or simply want to learn more about
+                our services and how we work, we’d love to hear from you. Reach
+                out today and a member of our team will be happy to assist.
+              </p>
+
+              <div className="flex mt-7 justify-between">
+                <div className="flex text-gray-600 flex-col gap-3">
+                  <h2 className=" text-black">Business Hours</h2>
+                  <p>
+                    Monday to Friday <br />
+                    8:00 am to 6:00 pm
+                  </p>
+                  <p className="mt-2">
+                    Office@atds.uk <br />
+                    +44 9809 423
+                  </p>
+                </div>
+
+                <div className="flex flex-col text-gray-600 gap-3">
+                  <h2 className="text-black">Contact</h2>
+                  <p>
+                    West London <br />
+                    Acton <br />
+                    W3 7BS
+                  </p>
+                </div>
+
+                <div className="flex gap-3 flex-col">
+                  <Link to='/terms-and-conditions'
+                    className="underline hover:text-black cursor-pointer"
+                  >
+                    Terms & Conditions
+                  </Link>
+                  <Link to="/privacy-policy"
+                    className="underline hover:text-black cursor-pointer"
+                  >
+                    Privacy Policy
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+     
+    </div>
+    
+
+
+    
     <Testimonials />
     </>
   )
