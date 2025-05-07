@@ -43,7 +43,7 @@ const Projects = [
       "../Images/projects/Hereford House - London/hereford9.JPG",
       "../Images/projects/Hereford House - London/hereford10.JPG",
     ],
-    category: "Private Development",
+    category: "Residential",
   },
   {
     title: "Shaa Road, Acton (Plot 1) – Full New-Build Residential House with Turnkey Finish",
@@ -104,7 +104,7 @@ const Projects = [
       "../Images/projects/Hackney Project/hackney13.JPG",
       "../Images/projects/Hackney Project/hackney14.PNG",
     ],
-    category: "Residential",
+    category: "Private Development",
   },
   {
     title: "Construction Project",
@@ -126,7 +126,7 @@ const Projects = [
       "../Images/projects/Construction/con12.jpg",
       "../Images/projects/Construction/con13.jpg",
     ],
-    category: "Private Development",
+    category: "Residential",
   },
   {
     title: "2C Shaa Road, Acton – Contemporary Flat Refurbishment & Furnishing",
@@ -170,7 +170,7 @@ const Projects = [
       "../Images/projects/Chalrles Street - London Mayfar/cs13.jpg",
       "../Images/projects/Chalrles Street - London Mayfar/cs14.jpg",
     ],
-    category: "Residential",
+    category: "Private Development",
   },
 ];
 
