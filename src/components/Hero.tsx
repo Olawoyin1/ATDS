@@ -83,21 +83,13 @@ import Slider from "react-slick";
 import Navbar from "./Navbar";
 
 const slides = [
-  // "https://img.freepik.com/free-photo/retro-living-room-interior-design_53876-145503.jpg",
-  // "https://img.freepik.com/free-photo/3d-room-interior-with-classic-design-furniture_23-2150895588.jpg",
-  // "https://img.freepik.com/premium-photo/landscape-blurry-building-city-background_87720-30456.jpg",
   "../../Images/slide2.jpg",
+  "../../Images/slide.JPG",
   "../../Images/slide3.png",
   "../../Images/slide4.jpg",
+  "../../Images/slide7.jpeg",
   "../../Images/slide1.JPG",
 ];
-// const slides = [
-//   "https://img.freepik.com/free-photo/construction-site_53876-14088.jpg",
-//   "https://img.freepik.com/premium-photo/landscape-blurry-building-city-background_87720-30456.jpg",
-//   "https://img.freepik.com/free-photo/3d-room-interior-with-classic-design-furniture_23-2150895588.jpg",
-//   "https://img.freepik.com/premium-photo/unfinished-room-renovation_1276740-2222.jpg",
-//   "https://img.freepik.com/free-photo/retro-living-room-interior-design_53876-145503.jpg",
-// ];
 
 const Hero = () => {
   const settings = {
