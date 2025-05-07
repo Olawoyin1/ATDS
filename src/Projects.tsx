@@ -101,6 +101,7 @@ const Projects = [
       "../Images/projects/Hackney Project/hackney11.JPG",
       "../Images/projects/Hackney Project/hackney12.JPG",
       "../Images/projects/Hackney Project/hackney13.JPG",
+      "../Images/projects/Hackney Project/hackney17.jpeg",
       // "../Images/projects/Hackney Project/hackney14.PNG",
     ],
     category: "Private Development",
