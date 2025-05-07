@@ -69,6 +69,7 @@ const Home = () => {
         <p></p>
     </div>
     
+    <Testimonials />
 
 
     {/* =======CONTSAT US HERE ======= */}
@@ -82,7 +83,7 @@ const Home = () => {
 
 
     
-    <Testimonials />
+    
     </>
   )
 }
