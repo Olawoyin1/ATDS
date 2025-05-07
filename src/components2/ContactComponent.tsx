@@ -76,7 +76,7 @@ const ContactComponent = () => {
                 <h2 className="text-black">Contact</h2>
                 <p className="">
                   Office@atds.uk <br />
-                  +020 3740 1249
+                  020 3740 1249
                 </p>
               </div>
               
