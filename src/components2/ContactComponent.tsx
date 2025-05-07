@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+// import { Link } from "react-router-dom"
 
 const ContactComponent = () => {
   return (
@@ -7,7 +7,7 @@ const ContactComponent = () => {
       <div className="md:flex gap-14">
         <div className="flex flex-1/2">
           <form  className="space-y-4 w-full">
-            <h2 className=" text-2xl">Tell Us about your project</h2>
+            <h2 className=" text-2xl">Tell us about your project</h2>
             <div>
               <label className="block text-sm font-medium">Name</label>
               <input
