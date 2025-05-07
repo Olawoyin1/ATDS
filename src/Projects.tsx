@@ -30,6 +30,7 @@ const Projects = [
     description:
       "Complete modernisation and internal refurbishment of a luxury residence. The scope of works included full reconfiguration of internal layouts to optimise space and function, installation of bespoke Italian kitchen and bathroom fittings, smart home automation, and complete rewiring and replumbing. All works were delivered with a focus on minimal disruption to neighbouring flats. ",
     images: [
+      "../Images/projects/Hereford House - London/herefordc.jpg",
       "../Images/projects/Hereford House - London/hereford.JPG",
       "../Images/projects/Hereford House - London/hereford1.JPG",
       "../Images/projects/Hereford House - London/hereford2.JPG",
@@ -69,6 +70,7 @@ const Projects = [
     description:
       "New-build residential property constructed to match adjacent development.",
     images: [
+      "../Images/projects/27 Shaa Road - Acton W3/shaacover.jpg",
       "../Images/projects/27 Shaa Road - Acton W3/shaa.JPG",
       "../Images/projects/27 Shaa Road - Acton W3/shaa1.JPG",
       "../Images/projects/27 Shaa Road - Acton W3/shaa2.JPG",
@@ -105,10 +107,10 @@ const Projects = [
     category: "Residential",
   },
   {
-    title: "BRISTOL Project 2024 completion - NEW BUILD - 9 APARTMENTS",
-    slug: "bristol-project-2024-completion",
+    title: "Construction Project",
+    slug: "construction-project",
     description:
-      "Newly completed residential development featuring 10 contemporary apartments in the Hackney district.",
+      "Construction Project slides.",
     images: [
       "../Images/projects/Construction/con11.jpg",
       "../Images/projects/Construction/con1.JPG",

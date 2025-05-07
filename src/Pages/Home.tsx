@@ -117,6 +117,8 @@ const Home = () => {
 
     {/* =======CONTSAT US HERE ======= */}
     <div className="py-10 " id="contact">
+      
+    <h2 className="text-3xl  text-center uppercase mb-10">Contact us</h2>
       <ContactComponent />
      
     </div>
