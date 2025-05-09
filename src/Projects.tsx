@@ -152,10 +152,10 @@ const Projects = [
     category: "Private Development",
   },
   {
-    title: "Construction Project",
-    slug: "construction-project",
+    title: "Construction Photos",
+    slug: "construction-photos",
     description:
-      "Construction Project slides.",
+      "Construction Photos slides.",
     images: [
       "../Images/projects/Construction/con11.jpg",
       "../Images/projects/Construction/con1.JPG",

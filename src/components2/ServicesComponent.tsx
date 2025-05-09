@@ -43,6 +43,13 @@ const ServicesComponent = () => {
           image:
             "https://img.freepik.com/free-photo/retro-living-room-interior-design_53876-145503.jpg?ga=GA1.1.1092135121.1738813692&semt=ais_hybrid&w=740",
         },
+        {
+          title: "Maintenance",
+          description:
+            "Maximise space and value by converting properties into functional, fully compliant flats. We handle layouts, regulatory approvals, and interior finishes to create attractive, liveable units.",
+          image:
+            "https://img.freepik.com/free-photo/retro-living-room-interior-design_53876-145503.jpg?ga=GA1.1.1092135121.1738813692&semt=ais_hybrid&w=740",
+        },
       ];
     
   return (
@@ -61,11 +68,11 @@ const ServicesComponent = () => {
           return (
             <div
               key={index}
-              className={`flex flex-col mb-9 md:mb-0 md:flex-row ${
+              className={`flex  flex-col mb-9 md:mb-0 md:flex-row ${
                 isReversed ? "md:flex-row-reverse" : ""
               } items-center`}
             >
-              <div className="relative flex items-center justify-center md:w-1/3 w-full">
+              <div className={`relative flex items-center ${isReversed ? "justify-start" : "justify-end"}  md:w-1/3 w-full`}>
                 {/* <img
                   src={service.image}
                   alt={service.title}
@@ -77,7 +84,7 @@ const ServicesComponent = () => {
                   </h4>
               </div>
               <div
-                className={`md:w-2/3 w-full md:min-h-[300px] flex justify-center  md:items-start  md:text-start flex-col h-full space-y-4 md:px-6 ${
+                className={`md:w-2/3 w-full md:min-h-[300px] flex justify-center  md:items-center  md:text-start flex-col h-full space-y-4 md:px-6 ${
                   index % 2 === 0
                     ? 'md:border-r-4 md:pr-8'
                     : 'md:border-l-4 md:pl-8'
@@ -87,11 +94,11 @@ const ServicesComponent = () => {
                 <h4 className="text-xl flex  md:hidden font-extrabold cf text-gray-600">
                     0{index + 1}
                   </h4>
-                  <h3 className="text-xl md:text-2xl uppercase">
+                  <h3 className="text-2xl md:text-4xl uppercase">
                     {service.title}
                   </h3>
                 </div>
-                <p className="text-gray-900 leading-relaxed">
+                <p className="text-gray-900 hidden leading-relaxed">
                   {service.description}
                 </p>
               </div>
