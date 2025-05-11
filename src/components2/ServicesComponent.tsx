@@ -9,7 +9,7 @@ const ServicesComponent = () => {
             "https://img.freepik.com/free-photo/construction-site_53876-14088.jpg?ga=GA1.1.1092135121.1738813692&semt=ais_hybrid&w=740",
         },
         {
-          title: "Extensions and Basements",
+          title: "Extensions & Basements",
           description:
             "Expand your home with smart extensions or unlock potential with basement conversions. Our team ensures every addition feels seamless, both structurally and aesthetically, while adding long-term value to your property.",
           image:
@@ -79,7 +79,7 @@ const ServicesComponent = () => {
                   className="w-full sm:min-h-[400px] object-cover"
                 /> */}
 
-                  <h4 className="text-4xl hidden md:block cf md:text-9xl font-bold sc">
+                  <h4 className="text-4xl hidden md:block cf md:text-6xl font-bold sc">
                     0{index + 1}
                   </h4>
               </div>
@@ -94,7 +94,7 @@ const ServicesComponent = () => {
                 <h4 className="text-xl flex  md:hidden font-extrabold cf text-gray-600">
                     0{index + 1}
                   </h4>
-                  <h3 className="text-2xl md:text-4xl uppercase">
+                  <h3 className="text-2xl md:text-3xl uppercase">
                     {service.title}
                   </h3>
                 </div>
