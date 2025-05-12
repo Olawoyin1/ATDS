@@ -731,10 +731,7 @@ const handleScrollToTop = () => {
                 <span className="text-[14px] mb-1">Professional Construction</span>
               </Link>
               }
-              {/* <Link to="/" onClick={handleLogoClick} className="flex flex-col nav-logo py-1 px-3">
-                <span className="p-0 m-0 cf font-extrabold">ATDS | AT Developments</span>
-                <span className="text-[14px] mb-1">Professional Construction</span>
-              </Link> */}
+              
               <nav className="flex space-x-6 text-sm uppercase">
                 <Link to="/" onClick={handleScrollToTop} className="hover:text-[#F8B44F] transition">Home</Link>
                 <Link to="/about" className="hover:text-[#F8B44F] transition">About</Link>
@@ -746,7 +743,7 @@ const handleScrollToTop = () => {
 
             {/* Mobile Navbar */}
             <div className="md:hidden flex justify-between items-center py-4">
-              <Link to="/" className="flex flex-col nav-logo py-1 px-3">
+              <Link to="/" onClick={handleScrollToTop}  className="flex flex-col nav-logo py-1 px-3">
                 <span className="p-0 mt-1 cf text-xs font-bold">ATDS | AT Developments</span>
                 <span className="text-[11px] mb-1">Professional Construction</span>
               </Link>
