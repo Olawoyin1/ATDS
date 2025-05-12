@@ -157,7 +157,7 @@ html {
 .logo::after{
     content: "";
     position: absolute;
-    width: 3rem;
+    width: 4rem;
     height: 100%;
     border: 4px solid #F8B44F;
     left: 0;

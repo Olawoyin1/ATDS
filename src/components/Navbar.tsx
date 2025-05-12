@@ -706,6 +706,13 @@ const MainNavbar = () => {
     return "hb shadow-sm";
   };
 
+
+  // const navigate = useNavigate();
+const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+ 
+
   return (
     <>
       {showNavbar && (
@@ -715,12 +722,21 @@ const MainNavbar = () => {
           <div className="container mx-auto">
             {/* Desktop Navbar */}
             <div className="hidden md:flex justify-between items-center py-4">
-              <Link to="/" className="flex flex-col nav-logo py-1 px-3">
+              {
+                isHomePage ? <Link to="/" onClick={handleScrollToTop} className="flex flex-col nav-logo py-1 px-3">
+                <span className="p-0 m-0 cf font-extrabold">ATDS | AT Developments</span>
+                <span className="text-[14px] mb-1">Professional Construction</span>
+              </Link> : <Link to="/"  className="flex flex-col nav-logo py-1 px-3">
                 <span className="p-0 m-0 cf font-extrabold">ATDS | AT Developments</span>
                 <span className="text-[14px] mb-1">Professional Construction</span>
               </Link>
+              }
+              {/* <Link to="/" onClick={handleLogoClick} className="flex flex-col nav-logo py-1 px-3">
+                <span className="p-0 m-0 cf font-extrabold">ATDS | AT Developments</span>
+                <span className="text-[14px] mb-1">Professional Construction</span>
+              </Link> */}
               <nav className="flex space-x-6 text-sm uppercase">
-                <Link to="/" className="hover:text-[#F8B44F] transition">Home</Link>
+                <Link to="/" onClick={handleScrollToTop} className="hover:text-[#F8B44F] transition">Home</Link>
                 <Link to="/about" className="hover:text-[#F8B44F] transition">About</Link>
                 <Link to="/services" className="hover:text-[#F8B44F] transition">Services</Link>
                 <Link to="/projects" className="hover:text-[#F8B44F] transition">Projects</Link>

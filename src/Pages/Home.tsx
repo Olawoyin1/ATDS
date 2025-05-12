@@ -5,6 +5,7 @@ import ProjectCard from "../components2/ProjectCard";
 import projects from '../Projects'
 import ContactComponent from "../components2/ContactComponent";
 import ServicesComponent from "../components2/ServicesComponent";
+import ScrollToTopButton from "../components2/ScrollToTopButton";
 
 const Home = () => {
 
@@ -83,7 +84,8 @@ const Home = () => {
 
 
     
-    
+    <ScrollToTopButton />
+
     </>
   )
 }
