@@ -244,6 +244,51 @@ const Services = () => {
             </p>
           </div>
 
+
+           {services.map((service, index) => {
+          const isReversed = index % 2 !== 0;
+
+          return (
+            <div
+              key={index}
+              className={`flex  flex-col mb-9 md:mb-0 md:flex-row ${
+                isReversed ? "md:flex-row-reverse" : ""
+              } items-center`}
+            >
+              <div className={`relative flex items-center ${isReversed ? "justify-start" : "justify-end"}  md:w-1/3 w-full`}>
+                {/* <img
+                  src={service.image}
+                  alt={service.title}
+                  className="w-full sm:min-h-[400px] object-cover"
+                /> */}
+
+                  <h4 className="text-4xl hidden md:block cf md:text-6xl font-bold sc">
+                    0{index + 1}
+                  </h4>
+              </div>
+              <div
+                className={`md:w-2/3 w-full md:min-h-[300px] flex justify-center  md:items-center  md:text-start flex-col h-full space-y-4 md:px-6 ${
+                  index % 2 === 0
+                    ? 'md:border-r-4 md:pr-8'
+                    : 'md:border-l-4 md:pl-8'
+                } bc`}
+              >
+                <div className="flex  md:items-start md:flex-col    gap-2">
+                <h4 className="text-xl flex  md:hidden font-extrabold cf text-gray-600">
+                    0{index + 1}
+                  </h4>
+                  <h3 className="text-2xl md:text-3xl uppercase">
+                    {service.title}
+                  </h3>
+                </div>
+                <p className="text-gray-900 hidden leading-relaxed">
+                  {/* {service.description} */}
+                </p>
+              </div>
+            </div>
+          );
+        })}
+
           {/* Styled Service List with Descriptions */}
           <div className="space-y-6">
            
@@ -263,3 +308,6 @@ const Services = () => {
 };
 
 export default Services;
+
+
+
