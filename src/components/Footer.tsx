@@ -1,35 +1,135 @@
+// import { FaFacebookF, FaTwitter, FaYoutube, FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
-
-const MiniFooterAlt = () => {
+const Footer = () => {
   return (
-    <footer className="bg-black cf text-gray-300 py-10">
-      <div className="max-w-screen-lg mx-auto text-center px-4">
-        {/* Logo or Site Name */}
-        {/* <h2 className="text-2xl  font-semibold mb-4 tracking-wide">AT<span className="text-amber-100">Developments</span></h2> */}
-
-           <Link to="/" className="flex flex-col nav-logo py-1 px-3">
+    <footer className="py-12 hb">
+      <div className="container mx-auto grid gap-10 sm:grid-cols-1 md:grid-cols-4">
+        {/* ATDevelopments Section - Full Width on Small */}
+        <div className="sm:col-span-1 md:col-span-1">
+          {/* <h3 className="text-xl font-semibold">ATDS</h3>
+          <span className="text-sm">AT Developments</span> */}
+          <Link to="/" className="flex flex-col ">
                 <span className="p-0 mt-1 cf text-xs font-bold">ATDS | AT Developments</span>
                 <span className="text-[11px] mb-1">Professional Construction</span>
-            </Link>
+              </Link>
+          <p className="">West London <br />
+                                Acton <br />
+                                W3 7BS </p>
+        </div>
 
-        {/* Navigation Links */}
-        <nav className="flex flex-wrap justify-center gap-6 text-sm mb-6">
-          <a href="#about" className="hover:text-white transition">About</a>
-          <a href="#services" className="hover:text-white transition">Services</a>
-          <a href="#projects" className="hover:text-white transition">Projects</a>
-          <a href="#contact" className="hover:text-white transition">Contact</a>
-        </nav>
+        {/* Wrapping Remaining 4 Sections for Mobile */}
+        <div className="grid grid-cols-2 sm:gap-10 md:contents sm:col-span-1 md:col-span-4">
+          {/* atds */}
+          <div className="hidden md:block">
+            <ul className="space-y-2 text-sm">
+              <li>© ATDS. {new Date().getFullYear()}</li>
+              <li>All Rights Reserved</li>
+            </ul>
+          </div>
 
-        
+          {/* Quick Links */}
+          <div className="">
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link to="/" className="hover:text-[#F8B44F]">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link to="/about" className="hover:text-[#F8B44F]">
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link to="/services" className="hover:text-[#F8B44F]">
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link to="/projects" className="hover:text-[#F8B44F]">
+                  Projects
+                </Link>
+              </li>
+              {/* <li>
+                <Link to="/contact" className="hover:text-[#F8B44F]">
+                  Contact
+                </Link>
+              </li> */}
+            </ul>
+          </div>
 
-        {/* Copyright */}
-        <p className="text-xs text-gray-500">
-          &copy; {new Date().getFullYear()} ATDevelopments - All Rights Reserved. 
-        </p>
-        <p className="text-xs text-gray-500">Registered in England and Wales, Company Number: 14733654</p>
+          {/* Quick Links */}
+          <div>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link to="/terms-and-conditions" className="hover:text-[#F8B44F]">
+                  Terms & Conditions
+                </Link>
+              </li>
+              <li>
+                <Link to="/privacy-policy" className="hover:text-[#F8B44F]">
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="hover:text-[#F8B44F]">
+                  Contact
+                </Link>
+              </li>
+              {/* <li>
+                <Link to="/" className="hover:text-[#F8B44F]">
+                  News
+                </Link>
+              </li> */}
+              {/* <li>
+                <Link to="/services" className="hover:text-[#F8B44F]">
+                  Services
+                </Link>
+              </li> */}
+            </ul>
+          </div>
+
+          
+
+          {/* socials */}
+          {/* <div className="flex mt-4 sm:mt-0 gap-6">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#F8B44F]"
+            >
+              <FaFacebookF />
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#F8B44F]"
+            >
+              <FaTwitter />
+            </a>
+            <a
+              href="https://youtube.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#F8B44F]"
+            >
+              <FaYoutube />
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#F8B44F]"
+            >
+              <FaInstagram />
+            </a>
+          </div> */}
+        </div>
       </div>
     </footer>
   );
 };
 
-export default MiniFooterAlt;
+export default Footer;

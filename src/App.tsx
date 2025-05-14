@@ -76,8 +76,6 @@
 
 // export default App;
 
-
-
 import "./App.css";
 import {
   createBrowserRouter,
@@ -89,7 +87,7 @@ import { lazy, Suspense } from "react";
 import "./index.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Loader from "./components2/Loader";
+import Loader from "./components/Loader";
 import Feedback from "./Pages/Feedback";
 // import Privacy from "./Pages/Privacy";
 // import TandC from "./Pages/TandC";
@@ -105,7 +103,7 @@ const ProjectDetails = lazy(() => import("./Pages/ProjectDetails"));
 const ErrorPage = lazy(() => import("./Pages/ErrorPage"));
 const TandC = lazy(() => import("./Pages/TandC"));
 const Privacy = lazy(() => import("./Pages/Privacy"));
-const SharedLayout = lazy(() => import("./components2/SharedLayout"));
+const SharedLayout = lazy(() => import("./components/SharedLayout"));
 
 const main = createBrowserRouter(
   createRoutesFromElements(
@@ -173,7 +171,7 @@ const main = createBrowserRouter(
           </Suspense>
         }
       />
-      
+
       <Route
         path="testimonials"
         element={
